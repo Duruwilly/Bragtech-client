@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import { appRoutes } from "./navigations/route";
+import { Suspense } from "react";
+import Layouts from "./components/layouts/Layouts";
+import Spinner from "./components/Spinner/Spinner";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <WhatsappIco /> */}
+      <Routes>
+        {appRoutes.map((route, index) => (
+          <Route
+            key={index}
+            path={route.path}
+            element={
+              <Layouts>
+                <Suspense fallback={<Spinner />}>
+                  {<route.component />}
+                </Suspense>
+              </Layouts>
+            }
+          ></Route>
+        ))}
+      </Routes>
+    </>
   );
 }
 
