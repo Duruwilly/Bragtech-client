@@ -5,16 +5,24 @@ import { BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 
 function Footer() {
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className="bg-[#222222] w-full px-10 pt-20 pb-9 relative">
-      <div className="max-w-[80px] max-h-[90px] absolute right-9 top-12">
-        <Link to="/">
-          <img
-            src="/images/arrow-up.gif"
-            alt="whatsapp"
-            className=" w-full p-0 m-0"
-          />
-        </Link>
+      <div
+        className="max-w-[80px] max-h-[90px] absolute right-9 top-12 cursor-pointer"
+        onClick={scrollTop}
+      >
+        <img
+          src="/images/arrow-up.gif"
+          alt="whatsapp"
+          className=" w-full p-0 m-0"
+        />
       </div>
       <div className="container mx-auto flex justify-between items-cente">
         <div className="w-[292px]">

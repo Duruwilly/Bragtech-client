@@ -30,8 +30,13 @@ const Heroe = () => {
               systems.
             </p>
             <div className="flex items-center gap-2 mt-3">
-              <PrimaryButton transparent={false} title="Contact Sales" />
               <PrimaryButton
+                path="contact-sales"
+                transparent={false}
+                title="Contact Sales"
+              />
+              <PrimaryButton
+                path="why-bragtech"
                 transparent={true}
                 title="Why Bragtech?"
                 color="#B50A0C"
@@ -49,13 +54,13 @@ const Heroe = () => {
         <div className="flex justify-between items-center mt-8">
           <ul className="flex item-center gap-3 text-[#54626A] font-light list-none">
             <p>Jump to:</p>
-            <Link className="underline">
+            <Link to="/our-product" className="underline">
               <li>Our Products</li>
             </Link>
-            <Link className="underline">
+            <Link to="why-bragtech" className="underline">
               <li>Why Pick Bragtech</li>
             </Link>
-            <Link className="underline">
+            <Link to="solutions" className="underline">
               <li>Security Solutions</li>
             </Link>
             <Link className="underline">
