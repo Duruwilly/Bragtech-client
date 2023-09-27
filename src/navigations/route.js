@@ -12,6 +12,8 @@ const OurClients = lazy(() => import("../pages/OurClients/OurClients"));
 
 const WhyBragtech = lazy(() => import("../pages/WhyBragtech"));
 
+const ContactSales = lazy(() => import("../pages/ContactSales"));
+
 export const appRoutes = [
   {
     path: "/",
@@ -36,5 +38,9 @@ export const appRoutes = [
   {
     path: "/why-bragtech",
     component: WhyBragtech,
+  },
+  {
+    path: "contact-sales",
+    component: ContactSales,
   },
 ];
