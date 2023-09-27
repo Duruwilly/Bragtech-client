@@ -24,8 +24,8 @@ function Footer() {
           className=" w-full p-0 m-0"
         />
       </div>
-      <div className="container mx-auto flex justify-between items-cente">
-        <div className="w-[292px]">
+      <div className="container mx-auto flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between">
+        <div className="lg:w-[292px]">
           <div className="max-w-[80px] max-h-[90px]">
             <Link to="/">
               <img
@@ -41,28 +41,28 @@ function Footer() {
           </p>
         </div>
         <ul className="list-none text-[#D7D7D7] space-y-6 mr-8 w-[152px]">
-          <li className="text-xl font-semibold mb-4">About</li>
+          <li className="text-2xl lg:text-xl font-semibold mb-4">About</li>
           <li className="text-base font-medium">How it works</li>
           <li className="text-base font-medium">Featured</li>
           <li className="text-base font-medium">Partnership</li>
           <li className="text-base font-medium">Business Relation</li>
         </ul>
         <ul className="list-none text-[#D7D7D7] space-y-6 mr-8 w-[152px]">
-          <li className="text-xl font-semibold mb-4">Community</li>
+          <li className="text-2xl lg:text-xl  font-semibold mb-4">Community</li>
           <li className="text-base font-medium">Events</li>
           <li className="text-base font-medium">Blog</li>
           <li className="text-base font-medium">Podcast</li>
           <li className="text-base font-medium">Invite a friend</li>
         </ul>
         <ul className="list-none text-[#D7D7D7] space-y-6 w-[152px]">
-          <li className="text-xl font-semibold mb-4">Socials</li>
+          <li className="text-2xl lg:text-xl  font-semibold mb-4">Socials</li>
           <li className="text-base font-medium">Discord</li>
           <li className="text-base font-medium">Instagram</li>
           <li className="text-base font-medium">Twitter</li>
           <li className="text-base font-medium">Facebook</li>
         </ul>
       </div>
-      <div className="container mx-auto flex justify-between mt-12">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between gap-9 mt-12">
         <div>
           <p className="text-white text-xl font-medium">Follow Us</p>
           <div className="flex items-center gap-10 mt-2">
@@ -88,7 +88,7 @@ function Footer() {
       <div className="flex justify-center mt-12">
         <div>
           <p className="text-white text-xs font-bold">&copy; 2023 Bragtech</p>
-          <div className="flex items-center">
+          <div className="flex flex-wrap items-center">
             <p className="text-white text-[11.20px] mr-1">Terms of Service |</p>
             <p className="text-white text-[11.20px] mr-1">
               Privacy Statement |

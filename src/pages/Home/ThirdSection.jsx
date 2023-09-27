@@ -3,9 +3,9 @@ import PrimaryButton from "../../components/common/PrimaryButton";
 
 const ThirdSection = () => {
   return (
-    <div className="w-full h-[50vh] pt-[0px] pb-[32px]">
+    <div className="flex flex-col items-center pt-[30px] pb-[32px]">
       <Section>
-        <div className="flex justify-between">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-9">
           <div className="flex justify-center items-center">
             <img
               src="/images/thirdHomeImg.png"
@@ -18,7 +18,7 @@ const ThirdSection = () => {
               Security Orchestration, Automation <br />
               and Response (SOAR)
             </h4>
-            <div className="w-[689px]">
+            <div className="lg:w-[689px]">
               <p className=" text-[#54626A] text-lg font-light leading-6 break-words mb-3">
                 Security Orchestration, Automation, and Response (SOAR) is a
                 strategy that integrates security tools, automates tasks, and

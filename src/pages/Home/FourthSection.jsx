@@ -3,7 +3,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const FourthSection = () => {
   return (
-    <div className="w-full h-[68p] pb-[32px]">
+    <div className="flex flex-col items-center h-[68p] pb-[32px]">
       <Section>
         <div>
           <span className=" text-[#363F44] text-2xl font-bold leading-7">
@@ -17,7 +17,7 @@ const FourthSection = () => {
           </p>
         </div>
         {/* first row */}
-        <div className="mt-16 grid grid-cols-3 gap-20 pb-8">
+        <div className="mt-16 flex flex-wrap lg:grid-cols3 homefourthSectiongrid gap-20 pb-8">
           {/* 1 */}
           <div>
             <div className="w-[140px] h-[90px] mb-4">
@@ -78,9 +78,6 @@ const FourthSection = () => {
               </span>
             </div>
           </div>
-        </div>
-        {/* second row */}
-        <div className="mt-16 grid grid-cols-3 gap-20 pb-8">
           {/* 1 */}
           <div>
             <div className="w-[140px] h-[90px] mb-4">
@@ -135,13 +132,10 @@ const FourthSection = () => {
             <div className="flex gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
               <span className="text-[#B50A0C] text-lg underline">
-                Find the Right Bragtech Security Product
+                Find the Right Security Product
               </span>
             </div>
           </div>
-        </div>
-        {/* third row */}
-        <div className="mt-16 grid grid-cols-3 gap-20 pb-8">
           {/* 1 */}
           <div>
             <div className="w-[140px] h-[90px] mb-4">
@@ -196,13 +190,10 @@ const FourthSection = () => {
             <div className="flex gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
               <span className="text-[#B50A0C] text-lg underline">
-                Find the Right Bragtech Security Product
+                Find the Right Security Product
               </span>
             </div>
           </div>
-        </div>
-        {/* fourth row */}
-        <div className="mt-16 grid grid-cols-3 gap-20 pb-8">
           {/* 1 */}
           <div>
             <div className="w-[140px] h-[90px] mb-4">
@@ -259,7 +250,7 @@ const FourthSection = () => {
             <div className="flex gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
               <span className="text-[#B50A0C] text-lg underline">
-                Find the Right Bragtech Security Product
+                Find the Right Security Product
               </span>
             </div>
           </div>

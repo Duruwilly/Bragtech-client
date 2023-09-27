@@ -4,7 +4,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const SixthSection = () => {
   return (
-    <div className="w-full py-[60px] bg-[#222222]">
+    <div className="flex flex-col items-center py-[60px] bg-[#222222]">
       {/* <div className="max-w-[80px] max-h-[90px] absolute right-9 bottom-6">
         <Link to="/">
           <img
@@ -15,15 +15,15 @@ const SixthSection = () => {
         </Link>
       </div> */}
       <Section>
-        <div className="flex justify-between pb-[48px]">
-          <div className="w-[410px] h-[300px]">
+        <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start pb-[48px] gap-8 lg:gap-0">
+          <div className="max-w-[410px] max-h-[300px]">
             <img
               src="/images/happy-african-man.jpeg"
               alt=""
               className=" w-full p-0 m-0"
             />
           </div>
-          <div className="w-[522.23px]">
+          <div className="lg:w-[522.23px]">
             <h2 className="text-white text-4xl font-bold leading-9 break-words mb-4">
               Solutions for Every Security
               <br />
@@ -35,7 +35,7 @@ const SixthSection = () => {
               to be. See what we can do for you.{" "}
             </p>
             <Link
-              to=""
+              to="/contact-sales"
               className="rounded-[4px] w-full h-[58px] text-xs py-[20px] px-[45px] border border-white text-white"
             >
               <button className="mt-4 text-base text-center tracking-[0.80px]">
@@ -44,8 +44,8 @@ const SixthSection = () => {
             </Link>
           </div>
         </div>
-        <div className="flex justify-between">
-          <div className="w-[522.23px]">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-7 lg:gap-0">
+          <div className="lg:w-[522.23px]">
             <h4 className="text-white text-2xl font-bold">
               Use Cases for Simple Security Strategies
             </h4>
@@ -92,7 +92,7 @@ const SixthSection = () => {
             </div>
           </div>
           {/* second row */}
-          <div className="w-[522.23px]">
+          <div className="lg:w-[522.23px]">
             <h4 className="text-white text-2xl font-bold">
               Supporting Your Security Goals
             </h4>

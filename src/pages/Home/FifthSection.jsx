@@ -2,10 +2,10 @@ import Section from "../../components/section/Section";
 
 const FifthSection = () => {
   return (
-    <div className="w-full py-[48px] bg-[#F7F7F7]">
+    <div className="flex flex-col items-center py-[48px] bg-[#F7F7F7]">
       <Section>
-        <div className="flex justify-between items-center">
-          <div className="w-[375.05px] h-[250px]">
+        <div className="flex flex-col lg:flex-row  justify-between items-center gap-7">
+          <div className="max-w-[375.05px] max-h-[250px]">
             <img
               src="/images/african-man-test.jpeg"
               alt=""
@@ -16,7 +16,7 @@ const FifthSection = () => {
             <h3 className="text-[#363F44] text-4xl font-bold break-words mb-4">
               Get Bragtech — and so much more
             </h3>
-            <div className="w-[707.19px]">
+            <div className="lg:w-[707.19px]">
               <p className="text-[#54626A] text-lg leading-6 break-words mb-5">
                 Build on Bragtech's strong authentication and device trust
                 protections with more layers of defense against phishing and
