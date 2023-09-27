@@ -10,7 +10,7 @@ const Layouts = (props) => {
         <Header />
         <Navbar />
         {props.children}
-        {/* <WhatsappIco /> */}
+        <WhatsappIco />
         <Footer />
       </div>
     </>
