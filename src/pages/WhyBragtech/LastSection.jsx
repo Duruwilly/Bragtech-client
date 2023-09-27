@@ -2,7 +2,7 @@ import Section from "../../components/section/Section";
 
 const LastSection = () => {
   return (
-    <div className="w-full bg-[#F5F6F8]">
+    <div className="w-full bg-[#F5F6F8] relative">
       <Section>
         <div className="pt-[64px] pb-[32px] pl-[64px] pr-[63.99px] flex justify-between items-center">
           <p className="text-[#54626A] text-3xl">
