@@ -78,11 +78,13 @@
 }
 
 .left0 {
+  top: 0;
   left: 0;
 }
 
 .left-100 {
-  left: -150%;
+  top: -150%;
+  left: 0;
 }
 
 .mobile-nav_content {

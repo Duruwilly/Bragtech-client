@@ -47,11 +47,6 @@ const Navbar = () => {
             title="Contact Sales"
             transparent={true}
           />
-          <PrimaryButton
-            path="/free-trials"
-            title="Free Trial"
-            transparent={false}
-          />
         </div>
         {/* bar */}
         <div className="relative navBarToggle cursor-pointer">

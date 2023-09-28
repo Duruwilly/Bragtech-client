@@ -1,15 +1,26 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import PrimaryButton from "../common/PrimaryButton";
 import { navbarMenus } from "../Navmenus";
 
 const MobileNav = ({ toggle }) => {
   return (
     <nav className="mobile-nav_content text-black">
-      <span className="mobile-nav__close" onClick={toggle}>
-        <FaTimes />
-      </span>
+      <div className="flex justify-between">
+        <div className="max-w-[80px] max-h-[90px] flex justify-center items-center">
+          <Link to="/">
+            <img
+              src="/images/logo.png"
+              alt="logo"
+              className=" w-full p-0 m-0"
+            />
+          </Link>
+        </div>
+        <span className="mobile-nav__close" onClick={toggle}>
+          <FaTimes />
+        </span>
+      </div>
       <div className="mobile-nav_container mt-12">
         {navbarMenus.map((nav) => (
           <NavLink

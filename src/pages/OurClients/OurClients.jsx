@@ -100,20 +100,6 @@ const OurClients = () => {
         { name: "Dufil", image: "/images/dufill.png.png" },
       ],
     },
-    // {
-    //   title: "Public Sector",
-    //   items: [
-    //     {
-    //       name: "Nigerian Communication Commission",
-    //       image: "/images/Untitled-1_0002_ncc.jpg.png",
-    //     },
-    //     { name: "Kano State Government", image: "/images/kano.webp.png" },
-    //     {
-    //       name: "Federal Inland Revenue Service",
-    //       image: "/images/firs.jpg.png",
-    //     },
-    //   ],
-    // },
   ];
 
   return (

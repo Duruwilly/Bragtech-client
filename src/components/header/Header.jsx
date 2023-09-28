@@ -1,5 +1,4 @@
 import React from "react";
-import { RiArrowDownSLine } from "react-icons/ri";
 
 const Header = () => {
   return (

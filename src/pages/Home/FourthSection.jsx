@@ -20,7 +20,7 @@ const FourthSection = () => {
         <div className="mt-16 flex flex-wrap lg:grid-cols3 homefourthSectiongrid gap-20 pb-8">
           {/* 1 */}
           <div>
-            <div className="w-[140px] h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
               <img src="/images/oemImg1.svg.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">
@@ -40,7 +40,7 @@ const FourthSection = () => {
           </div>
           {/* 2 */}
           <div>
-            <div className="w-[140px] h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
               <img src="/images/remote_icon.svg.jpg" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">
@@ -60,7 +60,7 @@ const FourthSection = () => {
           </div>
           {/* 3 */}
           <div>
-            <div className="w-[140px] h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
               <img src="/images/adaptive_icon.svg.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">
@@ -80,7 +80,7 @@ const FourthSection = () => {
           </div>
           {/* 1 */}
           <div>
-            <div className="w-[140px] h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
               <img src="/images/database-icon.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">Data Base</span>
@@ -100,7 +100,7 @@ const FourthSection = () => {
           </div>
           {/* 2 */}
           <div>
-            <div className="w-[140px] h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
               <img src="/images/sso_icon.svg.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">
@@ -120,7 +120,7 @@ const FourthSection = () => {
           </div>
           {/* 3 */}
           <div>
-            <div className="w-[140px] h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
               <img src="/images/Rectangle-57.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">Servers</span>
@@ -138,7 +138,7 @@ const FourthSection = () => {
           </div>
           {/* 1 */}
           <div>
-            <div className="w-[140px] h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
               <img src="/images/device_icon.svg.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">MiddleWare</span>
@@ -158,7 +158,7 @@ const FourthSection = () => {
           </div>
           {/* 2 */}
           <div>
-            <div className="w-[140px] h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
               <img src="/images/television-guide.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">
@@ -178,7 +178,7 @@ const FourthSection = () => {
           </div>
           {/* 3 */}
           <div>
-            <div className="w-[140px] h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
               <img src="/images/eos-software.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">Software</span>
@@ -196,7 +196,7 @@ const FourthSection = () => {
           </div>
           {/* 1 */}
           <div>
-            <div className="w-[140px] h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
               <img src="/images/carbon_application-mobile.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">
@@ -218,7 +218,7 @@ const FourthSection = () => {
           </div>
           {/* 2 */}
           <div>
-            <div className="w-[140px] h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
               <img src="/images/clarity_data.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">Big Data</span>
@@ -236,7 +236,7 @@ const FourthSection = () => {
           </div>
           {/* 3 */}
           <div>
-            <div className="w-[140px] h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
               <img src="/images/fluent-security-group.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">
