@@ -25,9 +25,9 @@ const FifthSection = () => {
                 secure all of your critical attack vectors — email, web traffic
                 and credential theft.
               </p>
-              <span className="text-[#54626A] text-lg underline break-words">
+              {/* <span className="text-[#54626A] text-lg underline break-words">
                 Get Started with Security Step-Up Now
-              </span>
+              </span> */}
             </div>
           </div>
         </div>

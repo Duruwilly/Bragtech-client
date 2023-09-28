@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <header className="left-0 top-0 right-0 h-24 px-4 bg-[#F7F7F7] flex justify-center">
-      <div className="section-container pl[155px] pr44 flex justify-between items-center">
+      <div className="section-container flex justify-between items-center">
         <div className="flex items-center">
           {/* logo */}
           <div className="max-w-[80px] max-h-[90px] flex justify-center items-center">

@@ -14,14 +14,6 @@ const LastSection = () => {
               Experience Bragtech now with a free trial
             </span>
           </div>
-          <Link
-            to=""
-            className="rounded-[4px] w-[222px] h-[58px] text-xs py-[20p] px-[45px] bg-primary text-white"
-          >
-            <button className="mt-4 text-base text-center tracking-[0.80px]">
-              Try Bragtech
-            </button>
-          </Link>
         </div>
       </div>
       <div className="mt-8 w-full">

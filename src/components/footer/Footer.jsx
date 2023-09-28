@@ -73,17 +73,6 @@ function Footer() {
             <IoLogoWhatsapp color="white" size={30} />
           </div>
         </div>
-        <div>
-          <div className=" pb-2 border-b-[3px] border-[#979797]">
-            <p className=" text-white text-xl font-medium">
-              International Resources:
-            </p>
-          </div>
-          <span className="text-white text-base flex justify-between mt-3">
-            <p>Select Language</p>
-            <MdOutlineKeyboardArrowDown className="font-bold" size={20} />
-          </span>
-        </div>
       </div>
       <div className="flex justify-center mt-12">
         <div>
@@ -106,7 +95,7 @@ function Footer() {
               Security Response |
             </p>
             <p className="text-white text-[11.20px] mr-1">
-              Business Continuity During COVID-19
+              Business Continuity During COVID-19 |
             </p>
             <p className="text-white text-[11.20px] mr-1">
               Manage Cookie Preferences
