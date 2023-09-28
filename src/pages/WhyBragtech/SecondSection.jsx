@@ -4,7 +4,7 @@ import { GoCheckCircleFill } from "react-icons/go";
 
 const SecondSection = () => {
   return (
-    <div className="w-full pt-6 py-1">
+    <div className="flex flex-col items-center pt-6 py-1 overflow-x-auto">
       <Section>
         <table>
           <thead className="w-full border-b-[20px] border-[#DAE4E6] py-[10x]">
@@ -50,9 +50,9 @@ const SecondSection = () => {
                 </div>
               </td>
               <td>
-                <div className="borderb borderblack h-full py4 pl-[56.31px] pr-[20px] flex justify-start items-center gap-[60px]">
+                <div className="borderb borderblack h-full py4 pl-[56.31px] pr-[20px] flex items-center gap-[60px]">
                   <GoCheckCircleFill color="#FF4500" size={40} />
-                  <div className="pr-[25.22px] flex justify-start items-start">
+                  <div className="pr-[25.22px] flex items-start">
                     <div className="text-[#54626A] text-lg font-normal">
                       Flexible application
                       <br />
@@ -93,9 +93,9 @@ const SecondSection = () => {
                 </div>
               </td>
               <td>
-                <div className="h-full py4 pl-[56.31px] pr-[20px] flex justify-start items-center gap-[60px]">
+                <div className="h-full py4 pl-[56.31px] pr-[20px] flex items-center gap-[60px]">
                   <GoCheckCircleFill color="#FF4500" size={40} />
-                  <div className="pr-[25.22x] flex justify-start items-start">
+                  <div className="pr-[25.22x] flex items-start">
                     <div className="text-[#54626A] text-lg font-normal">
                       Boost user productivity
                       <br />
@@ -134,9 +134,9 @@ const SecondSection = () => {
                 </div>
               </td>
               <td>
-                <div className="pl-[56.31px] pr-[20px] flex justify-start items-center gap-[60px]">
+                <div className="pl-[56.31px] pr-[20px] flex items-center gap-[60px]">
                   <GoCheckCircleFill color="#FF4500" size={40} />
-                  <div className="pr-[25.22px] flex justify-start items-start">
+                  <div className="pr-[25.22px] flex items-start">
                     <div className="text-[#54626A] text-lg font-normal">
                       Simple pricing you can
                       <br />
@@ -169,9 +169,9 @@ const SecondSection = () => {
                 </div>
               </td>
               <td>
-                <div className="pl-[56.31px] pr-[20px] flex justify-start items-center gap-[60px]">
+                <div className="pl-[56.31px] pr-[20px] flex items-center gap-[60px]">
                   <GoCheckCircleFill color="#FF4500" size={40} />
-                  <div className="pr-[25.22px] flex justify-start items-start">
+                  <div className="pr-[25.22px] flex items-start">
                     <div className="text-[#54626A] text-lg font-normal">
                       Deploy protection to
                       <br />
@@ -208,9 +208,9 @@ const SecondSection = () => {
                 </div>
               </td>
               <td>
-                <div className="pl-[56.31px] pr-[20px] flex justify-start items-center gap-[60px]">
+                <div className="pl-[56.31px] pr-[20px] flex items-center gap-[60px]">
                   <GoCheckCircleFill color="#FF4500" size={40} />
-                  <div className="pr-[25.22px] flex justify-start items-start">
+                  <div className="pr-[25.22px] flex items-start">
                     <div className="text-[#54626A] text-lg font-normal">
                       Seamlessly start zero
                       <br />
@@ -249,9 +249,9 @@ const SecondSection = () => {
                 </div>
               </td>
               <td>
-                <div className="pl-[56.31px] pr-[20px] flex justify-start items-center gap-[60px]">
+                <div className="pl-[56.31px] pr-[20px] flex items-center gap-[60px]">
                   <GoCheckCircleFill color="#FF4500" size={40} />
-                  <div className="pr-[25.22px] flex justify-start items-start">
+                  <div className="pr-[25.22px] flex items-start">
                     <div className="text-[#54626A] text-lg font-normal">
                       All-encompassing
                       <br />
@@ -294,9 +294,9 @@ const SecondSection = () => {
                 </div>
               </td>
               <td>
-                <div className="pl-[56.31px] pr-[20px] flex justify-start items-center gap-[60px]">
+                <div className="pl-[56.31px] pr-[20px] flex items-center gap-[60px]">
                   <GoCheckCircleFill color="#FF4500" size={40} />
-                  <div className="pr-[25.22px] flex justify-start items-start">
+                  <div className="pr-[25.22px] flex items-start">
                     <div className="text-[#54626A] text-lg font-normal">
                       Boost admin
                       <br />
@@ -335,9 +335,9 @@ const SecondSection = () => {
                 </div>
               </td>
               <td>
-                <div className="pl-[56.31px] pr-[20px] flex justify-start items-center gap-[60px]">
+                <div className="pl-[56.31px] pr-[20px] flex items-center gap-[60px]">
                   <GoCheckCircleFill color="#FF4500" size={40} />
-                  <div className="pr-[25.22px] flex justify-start items-start">
+                  <div className="pr-[25.22px] flex items-start">
                     <div className="text-[#54626A] text-lg font-normal">
                       Knowledgeable support
                       <br />

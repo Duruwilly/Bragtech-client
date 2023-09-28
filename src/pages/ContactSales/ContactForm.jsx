@@ -23,18 +23,18 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full py-12">
+    <div className="flex flex-col items-center py-12">
       <Section>
-        <div className="flex justify-between">
+        <div className="flex flex-col-reverse xl:flex-row justify-between sm:items-center xl:items-start">
           <div>
             <h3 className="text-[#363F44] text-[46px] font-bold">
               Contact Sales
             </h3>
-            <p className="text-[#54626A] text-lg w-[345.56px]">
+            <p className="text-[#54626A] text-lg xl:w-[345.56px]">
               This form is for demo requests only. Please visit the following
               page to request customer support.
             </p>
-            <form action="" className="space-y-4 mt-3 w-full max-w-[340px]">
+            <form action="" className="space-y-4 mt-3 w-full max-w-[400px]">
               <input
                 name="firstName"
                 value={formState.firstName}
@@ -46,32 +46,32 @@ const ContactForm = () => {
               <input
                 name="lastName"
                 value={formState.lastName}
-                type="text
-                 onChange={handleChange}"
+                type="text"
+                onChange={handleChange}
                 className="w-full py-3 px-4 bg-white rounded-[4px] text-[#54626A] text-base border border-[#bfbbbb] shadow-md"
                 placeholder="Last Name *"
               />
               <input
                 name="businessEmail"
                 value={formState.businessEmail}
-                type="text
-                 onChange={handleChange}"
+                type="text"
+                onChange={handleChange}
                 className="w-full py-3 px-4 bg-white rounded-[4px] text-[#54626A] text-base border border-[#bfbbbb] shadow-md"
                 placeholder="Business Email *"
               />
               <input
                 name="title"
                 value={formState.title}
-                type="text
-                 onChange={handleChange}"
+                type="text"
+                onChange={handleChange}
                 className="w-full py-3 px-4 bg-white rounded-[4px] text-[#54626A] text-base border border-[#bfbbbb] shadow-md"
                 placeholder="Title *"
               />
               <input
                 name="companyName"
                 value={formState.companyName}
-                type="text
-                 onChange={handleChange}"
+                type="text"
+                onChange={handleChange}
                 className="w-full py-3 px-4 bg-white rounded-[4px] text-[#54626A] text-base border border-[#bfbbbb] shadow-md"
                 placeholder="Company Name *"
               />
@@ -86,8 +86,8 @@ const ContactForm = () => {
               <input
                 name="country"
                 value={formState.country}
-                type="text
-                 onChange={handleChange}"
+                type="text"
+                onChange={handleChange}
                 className="w-full py-3 px-4 bg-white rounded-[4px] text-[#54626A] text-base border border-[#bfbbbb] shadow-md"
                 placeholder="Enter Country *"
               />
@@ -139,7 +139,7 @@ const ContactForm = () => {
               </button>
             </form>
           </div>
-          <div className="w-[557px] h-[506.24px]">
+          <div className="max-w-[557px] max-h-[506.24px]">
             <img
               src="/images/contactImg.png"
               className="w-full p-0"

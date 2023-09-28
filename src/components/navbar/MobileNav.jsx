@@ -25,7 +25,7 @@ const MobileNav = ({ toggle }) => {
           </NavLink>
         ))}
       </div>
-      <div className="absolute bottom-0">
+      <div className="absolute bottom-5">
         <div className="flex gap-7" onClick={toggle}>
           <PrimaryButton
             path="/contact-sales"

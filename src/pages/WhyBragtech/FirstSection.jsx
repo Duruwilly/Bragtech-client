@@ -6,7 +6,7 @@ import { RiSpeedLine } from "react-icons/ri";
 
 const FirstSection = () => {
   return (
-    <div className="w-full py-9">
+    <div className="flex flex-col items-center py-9">
       <Section>
         <div className="">
           <h2 className="text-[#363F44] text-4xl font-bold">

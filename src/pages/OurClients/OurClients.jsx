@@ -117,7 +117,7 @@ const OurClients = () => {
   ];
 
   return (
-    <div className="w-full bg-[#F7F7F7] flex-1">
+    <div className="flex flex-col items-center bg-[#F7F7F7] flex-1">
       <Section>
         <div className="pt-10">
           <div className="pt-[7px] pb-2 pl-6 border-l-4 border-[#DA251C]">

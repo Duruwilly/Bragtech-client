@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="w-full py-16 pl-[176px] bg-[#363F44]">
+    <div className="w-full py-16 px-6 text-center pl[176px] bg-[#363F44]">
       <h1 className="text-white text-[46px] font-bold mb-3">
         Good afternoon, let’s talk
       </h1>

@@ -4,9 +4,9 @@ import { BsPencil } from "react-icons/bs";
 
 const FirstSection = () => {
   return (
-    <div className="w-full py-16 bg-[#363F43]">
+    <div className="flex flex-col items-center py-16 bg-[#363F43]">
       <Section>
-        <div className="flex justify-center items-center gap-[110px]">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-10 sm:gap-[110px]">
           <div className="flex flex-col items-center gap-4">
             <PiMouse color="white" size={60} />
             <p className="text-center text-white text-lg font-bold">
