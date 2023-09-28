@@ -22,7 +22,11 @@ const SecondSection = () => {
               </p>
             </div>
             <div className="mt-3">
-              <PrimaryButton transparent={false} title="Contact Sales" />
+              <PrimaryButton
+                transparent={false}
+                title="Contact Sales"
+                path="contact-sales"
+              />
             </div>
           </div>
           <div className="max-w-[340px] max-h-[250px] flex justify-center items-center">

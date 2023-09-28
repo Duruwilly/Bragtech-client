@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Section from "../../components/section/Section";
 import { FaCheckCircle } from "react-icons/fa";
 
@@ -17,7 +18,7 @@ const FourthSection = () => {
           </p>
         </div>
         {/* first row */}
-        <div className="mt-16 flex flex-wrap lg:grid-cols3 homefourthSectiongrid gap-20 pb-8">
+        <div className="mt-16 grid lg:grid-cols-3 homeseventhSection-grid gap-20 pb-8">
           {/* 1 */}
           <div>
             <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
@@ -33,9 +34,11 @@ const FourthSection = () => {
             </p>
             <div className="flex items-center gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
-              <span className="text-[#B50A0C] text-lg underline">
-                Get Fast MFA
-              </span>
+              <Link to="/contact-sales">
+                <span className="text-[#B50A0C] text-lg underline">
+                  Get Fast MFA
+                </span>
+              </Link>
             </div>
           </div>
           {/* 2 */}
@@ -53,9 +56,11 @@ const FourthSection = () => {
             </p>
             <div className="flex items-center gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
-              <span className="text-[#B50A0C] text-lg underline">
-                Secure Remote Access
-              </span>
+              <Link to="/contact-sales">
+                <span className="text-[#B50A0C] text-lg underline">
+                  Secure Remote Access
+                </span>
+              </Link>
             </div>
           </div>
           {/* 3 */}
@@ -73,9 +78,11 @@ const FourthSection = () => {
             </p>
             <div className="flex items-center gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
-              <span className="text-[#B50A0C] text-lg underline">
-                Discover Adaptive Access
-              </span>
+              <Link to="/contact-sales">
+                <span className="text-[#B50A0C] text-lg underline">
+                  Discover Adaptive Access
+                </span>
+              </Link>
             </div>
           </div>
           {/* 1 */}
@@ -93,9 +100,11 @@ const FourthSection = () => {
             </p>
             <div className="flex items-center gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
-              <span className="text-[#B50A0C] text-lg underline">
-                Explore Device Trust
-              </span>
+              <Link to="/contact-sales">
+                <span className="text-[#B50A0C] text-lg underline">
+                  Explore Device Trust
+                </span>
+              </Link>
             </div>
           </div>
           {/* 2 */}
@@ -113,9 +122,11 @@ const FourthSection = () => {
             </p>
             <div className="flex items-center gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
-              <span className="text-[#B50A0C] text-lg underline">
-                Learn About SSO
-              </span>
+              <Link to="/contact-sales">
+                <span className="text-[#B50A0C] text-lg underline">
+                  Learn About SSO
+                </span>
+              </Link>
             </div>
           </div>
           {/* 3 */}
@@ -131,9 +142,11 @@ const FourthSection = () => {
             </p>
             <div className="flex gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
-              <span className="text-[#B50A0C] text-lg underline">
-                Find the Right Security Product
-              </span>
+              <Link to="/contact-sales">
+                <span className="text-[#B50A0C] text-lg underline">
+                  Find the Right Security Product
+                </span>
+              </Link>
             </div>
           </div>
           {/* 1 */}
@@ -151,9 +164,11 @@ const FourthSection = () => {
             </p>
             <div className="flex items-center gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
-              <span className="text-[#B50A0C] text-lg underline">
-                Explore Device Trust
-              </span>
+              <Link to="/contact-sales">
+                <span className="text-[#B50A0C] text-lg underline">
+                  Explore Device Trust
+                </span>
+              </Link>
             </div>
           </div>
           {/* 2 */}
@@ -171,9 +186,11 @@ const FourthSection = () => {
             </p>
             <div className="flex items-center gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
-              <span className="text-[#B50A0C] text-lg underline">
-                Learn About SSO
-              </span>
+              <Link to="/contact-sales">
+                <span className="text-[#B50A0C] text-lg underline">
+                  Learn About SSO
+                </span>
+              </Link>
             </div>
           </div>
           {/* 3 */}
@@ -189,9 +206,11 @@ const FourthSection = () => {
             </p>
             <div className="flex gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
-              <span className="text-[#B50A0C] text-lg underline">
-                Find the Right Security Product
-              </span>
+              <Link to="/contact-sales">
+                <span className="text-[#B50A0C] text-lg underline">
+                  Find the Right Security Product
+                </span>
+              </Link>
             </div>
           </div>
           {/* 1 */}
@@ -211,9 +230,11 @@ const FourthSection = () => {
             </p>
             <div className="flex items-center gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
-              <span className="text-[#B50A0C] text-lg underline">
-                Explore Device Trust
-              </span>
+              <Link to="/contact-sales">
+                <span className="text-[#B50A0C] text-lg underline">
+                  Explore Device Trust
+                </span>
+              </Link>
             </div>
           </div>
           {/* 2 */}
@@ -229,9 +250,11 @@ const FourthSection = () => {
             </p>
             <div className="flex items-center gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
-              <span className="text-[#B50A0C] text-lg underline">
-                Learn About SSO
-              </span>
+              <Link to="/contact-sales">
+                <span className="text-[#B50A0C] text-lg underline">
+                  Learn About SSO
+                </span>
+              </Link>
             </div>
           </div>
           {/* 3 */}
@@ -249,9 +272,11 @@ const FourthSection = () => {
             </p>
             <div className="flex gap-4 mt-6">
               <FaCheckCircle color="#B50A0C" size={20} />
-              <span className="text-[#B50A0C] text-lg underline">
-                Find the Right Security Product
-              </span>
+              <Link to="/contact-sales">
+                <span className="text-[#B50A0C] text-lg underline">
+                  Find the Right Security Product
+                </span>
+              </Link>
             </div>
           </div>
         </div>

@@ -28,9 +28,6 @@ const SeventhSection = () => {
               susceptibility to attacks and trains them how to identify these
               threats and phishing attempts.
             </p>
-            <span className="text-[#54626A] text-lg underline mt-2">
-              Contact Us
-            </span>
           </div>
           {/* second row */}
           <div>
@@ -52,9 +49,6 @@ const SeventhSection = () => {
               features ensure simple, safe and easy ways to manage variety of
               corporate owned as well as BYO devices.
             </p>
-            <span className="text-[#54626A] text-lg underline mt-2">
-              Contact Us
-            </span>
           </div>
           {/* third row */}
           <div>
@@ -83,9 +77,6 @@ const SeventhSection = () => {
               <br />
               by clicking below
             </p>
-            <span className="text-[#54626A] text-lg underline mt-2">
-              Contact Us
-            </span>
           </div>
         </div>
       </Section>

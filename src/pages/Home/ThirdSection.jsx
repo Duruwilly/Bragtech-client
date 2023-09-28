@@ -33,7 +33,11 @@ const ThirdSection = () => {
                 organization's overall security posture.
               </p>
               <div className="mt-3">
-                <PrimaryButton transparent={false} title="Contact Sales" />
+                <PrimaryButton
+                  transparent={false}
+                  title="Contact Sales"
+                  path="contact-sales"
+                />
               </div>
             </div>
           </div>
