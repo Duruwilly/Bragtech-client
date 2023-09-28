@@ -2,7 +2,7 @@ import Section from "../../components/section/Section";
 
 const SecondSection = () => {
   return (
-    <div className="w-full h-[68p] pb-[32px]">
+    <div className="flex flex-col items-center pb-[32px]">
       <Section>
         <div>
           <span className=" text-[#363F44] text-2xl font-bold leading-7">
@@ -16,7 +16,7 @@ const SecondSection = () => {
           </p>
         </div>
         {/* first row */}
-        <div className="mt-16 grid grid-cols-3 gap-20 pb-8">
+        <div className="mt-16 grid grid-cols-3 homeseventhSection-grid flx flexwrap gap-20 pb-8">
           {/* 1 */}
           <div>
             <div className="w-[140px] h-[90px] mb-4">
@@ -76,9 +76,6 @@ const SecondSection = () => {
               </span>
             </div>
           </div>
-        </div>
-        {/* second row */}
-        <div className="mt-16 grid grid-cols-3 gap-20 pb-8">
           {/* 1 */}
           <div>
             <div className="w-[140px] h-[90px] mb-4">
@@ -145,9 +142,6 @@ const SecondSection = () => {
               </span>
             </div>
           </div>
-        </div>
-        {/* third row */}
-        <div className="mt-16 grid grid-cols-3 gap-20 pb-8">
           {/* 1 */}
           <div>
             <div className="w-[140px] h-[90px] mb-4">

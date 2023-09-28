@@ -4,12 +4,12 @@ const Heroe = () => {
   return (
     <div className="flex flex-col items-center py-[64px] bg-[#F7F7F7]">
       <Section>
-        <div className="flex justify-between">
-          <div className="w-[572px]">
+        <div className="flex flex-col-reverse xl:flex-row justify-between">
+          <div className="lg:w-[572px]">
             <h3 className="text-[#363F44] text-4xl font-bold break-words">
               Bragtech for Everyone
             </h3>
-            <p className="w-[463.83px] text-[#54626A] text-lg break-words">
+            <p className="lg:w-[463.83px] text-[#54626A] text-lg break-words">
               {" "}
               Bragtech’s access security is customizable, easy to set up, and
               simple to use, making it the perfect solution for a wide range of

@@ -2,7 +2,7 @@ import Section from "../../components/section/Section";
 
 const FourthSection = () => {
   return (
-    <div className="w-full py-8">
+    <div className="flex flex-col items-center py-8">
       <Section>
         <h3 className="text-4xl font-bold break-words">
           <span className="text-[#363F44]">Our </span>
@@ -19,7 +19,7 @@ const FourthSection = () => {
           <br />
           your specific compliance requirements here.
         </p>
-        <div className="grid grid-cols-3 mt-6 gap-7">
+        <div className="grid grid-cols-3 homeseventhSection-grid mt-6 gap-7">
           {/* first */}
           <div>
             <div className="mb-4">

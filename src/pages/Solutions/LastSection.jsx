@@ -4,10 +4,10 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const LastSection = () => {
   return (
-    <div className="w-full bg-[#363F44] py-24">
+    <div className="flex flex-col items-center bg-[#363F44] py-24">
       <Section>
-        <div className="flex justify-between">
-          <div className="flex justify-center items-center w-[477px] h-[318px]">
+        <div className="flex flex-col xl:flex-row justify-between">
+          <div className="flex justify-center items-center max-w-[477px] max-h-[318px]">
             <img
               src="/images/Plantperson.png.png"
               alt="whatsapp"
