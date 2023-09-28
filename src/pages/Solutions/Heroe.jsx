@@ -2,7 +2,7 @@ import Section from "../../components/section/Section";
 
 const Heroe = () => {
   return (
-    <div className="w-full py-[64px] bg-[#F7F7F7]">
+    <div className="flex flex-col items-center py-[64px] bg-[#F7F7F7]">
       <Section>
         <div className="flex justify-between">
           <div className="w-[572px]">

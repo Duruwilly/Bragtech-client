@@ -3,9 +3,9 @@ import Section from "../../components/section/Section";
 
 const LastSection = () => {
   return (
-    <div className="w-full py-24">
+    <div className="flex flex-col items-center py-24">
       <Section>
-        <div className="flex justify-between">
+        <div className="flex flex-col-reverse xl:flex-row justify-between">
           <div>
             <p className="text-[#363F44] text-4xl font-bold">
               Securing the

@@ -3,13 +3,13 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const SecondSection = () => {
   return (
-    <div className="w-full h-[336p] pt-[64px] pb-[52px]">
+    <div className="flex flex-col items-center h-[336p] pt-[64px] pb-[52px]">
       <Section>
         <div className="pb-16">
           <h3 className="text-[#363F44] text-4xl font-bold break-words">
             Your Journey to Zero Trust Starts Here
           </h3>
-          <p className="w-[718px] text-[#54626A] text-lg break-words mt-5">
+          <p className="xl:w-[718px] text-[#54626A] text-lg break-words mt-5">
             {" "}
             Zero trust takes security beyond the corporate network perimeter,
             protecting your data at
@@ -19,7 +19,7 @@ const SecondSection = () => {
             and Bragtech is your rock-solid foundation.
           </p>
         </div>
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-3 homeseventhSection-grid">
           <div>
             <div className="max-w-[341.33px] max-h-[250.44px] flex4">
               <img

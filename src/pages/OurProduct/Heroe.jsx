@@ -2,22 +2,16 @@ import Section from "../../components/section/Section";
 
 const Heroe = () => {
   return (
-    <div className="w-full h-[336p] pt-[64px] pb-[52px] bg-[#F7F7F7]">
+    <div className="flex flex-col items-center h-[336p] pt-[64px] pb-[52px] bg-[#F7F7F7]">
       <Section>
-        <div className="flex items-cente gap-18">
+        <div className="flex flex-col-reverse xl:flex-row items-center gap-14">
           <div>
             <h3 className="w-[267.83p] text-[#363F44] text-[46px] font-bold break-words">
-              Access Security for
-              <br />
-              Everyone, from Any
-              <br />
-              Device, Anywhere
+              Access Security for Everyone, from Any Device, Anywhere
             </h3>
             <p className="w-[267.83p] text-[#54626A] text-lg break-words mt-5">
-              For organizations of all sizes that need to protect sensitive
-              <br />
-              data at scale, Bragtech is the user-friendly zero-trust security
-              <br />
+              For organizations of all sizes that need to protect sensitive data
+              at scale, Bragtech is the user-friendly zero-trust security
               platform for all users, all devices and all applications
             </p>
             <button className=" py-5 px-4 bg-[#B50A0C] rounded-[4px] border border-primary text-center text-white text-base mt-6">
@@ -36,7 +30,7 @@ const Heroe = () => {
           <p className="text-[#363F44] text-2xl font-bold mt-7">
             With Bragtech, you can:
           </p>
-          <div className="flex justify-between mt-10">
+          <div className="flex flex-wrap justify-between mt-10">
             {/* first row */}
             <div>
               <div className="w-[140px] h-[90px] mb-4">
