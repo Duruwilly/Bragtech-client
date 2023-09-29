@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { FaFacebookSquare } from "react-icons/fa";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 

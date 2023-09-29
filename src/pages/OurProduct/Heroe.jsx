@@ -4,12 +4,12 @@ const Heroe = () => {
   return (
     <div className="flex flex-col items-center h-[336p] pt-[64px] pb-[52px] bg-[#F7F7F7]">
       <Section>
-        <div className="flex flex-col-reverse xl:flex-row items-center gap-14">
-          <div>
-            <h3 className="w-[267.83p] text-[#363F44] text-[46px] font-bold break-words">
+        <div className="flex flex-col-reverse xl:flex-row items-center gap-5 xl:gap-14">
+          <div className="lg:w-[689px]">
+            <h3 className="lg:w-[267.83p] text-[#363F44] text-[46px] font-bold break-words">
               Access Security for Everyone, from Any Device, Anywhere
             </h3>
-            <p className="w-[267.83p] text-[#54626A] text-lg break-words mt-5">
+            <p className="lg:w-[267.83p] text-[#54626A] text-lg break-words mt-5">
               For organizations of all sizes that need to protect sensitive data
               at scale, Bragtech is the user-friendly zero-trust security
               platform for all users, all devices and all applications
