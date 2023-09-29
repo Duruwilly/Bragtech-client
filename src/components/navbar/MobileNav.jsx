@@ -37,16 +37,10 @@ const MobileNav = ({ toggle }) => {
         ))}
       </div>
       <div className="absolute bottom-5">
-        <div className="flex gap-7" onClick={toggle}>
+        <div className="w-full" onClick={toggle}>
           <PrimaryButton
             path="/contact-sales"
             title="Contact Sales"
-            transparent={true}
-          />
-
-          <PrimaryButton
-            path="/free-trials"
-            title="Free Trial"
             transparent={false}
           />
         </div>
