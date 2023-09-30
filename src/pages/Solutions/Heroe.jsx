@@ -16,13 +16,13 @@ const Heroe = () => {
               industries and use cases.
             </p>
           </div>
-          <div className="max-w-[524.94px] max-h-[350px] rounded-[10px]">
+          {/* <div className="flex justify-center items-center w-[451.56px] h[450px]">
             <img
-              src="/images/front-view-woman-posin.png"
+              src="/images/solutionsHeroe.png"
               alt=""
-              className="w-full p-0 m-0"
+              className="w-full p-0"
             />
-          </div>
+          </div> */}
         </div>
       </Section>
     </div>

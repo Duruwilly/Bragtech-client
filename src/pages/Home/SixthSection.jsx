@@ -15,13 +15,9 @@ const SixthSection = () => {
         </Link>
       </div> */}
       <Section>
-        <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start pb-[48px] gap-8 lg:gap-0">
-          <div className="max-w-[410px] max-h-[300px]">
-            <img
-              src="/images/happy-african-man.jpeg"
-              alt=""
-              className=" w-full p-0 m-0"
-            />
+        <div className="flex flex-col lg:flex-row justify-between items-cente lg:items-star pb-[48px] gap-8 lg:gap-0">
+          <div className="max-w-[500p] max-h[650px]">
+            <img src="/images/img10.png" alt="" className=" w-full p-0 m-0" />
           </div>
           <div className="lg:w-[522.23px]">
             <h2 className="text-white text-4xl font-bold leading-9 break-words mb-4">

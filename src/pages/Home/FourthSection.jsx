@@ -174,7 +174,7 @@ const FourthSection = () => {
           {/* 2 */}
           <div>
             <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
-              <img src="/images/television-guide.png" alt="" />
+              <img src="/images/visuals.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">
               Virtualisation
@@ -196,7 +196,7 @@ const FourthSection = () => {
           {/* 3 */}
           <div>
             <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
-              <img src="/images/eos-software.png" alt="" />
+              <img src="/images/software.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">Software</span>
             <p className=" text-[#54626A] text-lg mt-4">
@@ -216,7 +216,7 @@ const FourthSection = () => {
           {/* 1 */}
           <div>
             <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
-              <img src="/images/carbon_application-mobile.png" alt="" />
+              <img src="/images/application.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">
               Application
@@ -240,7 +240,7 @@ const FourthSection = () => {
           {/* 2 */}
           <div>
             <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
-              <img src="/images/clarity_data.png" alt="" />
+              <img src="/images/bigData.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">Big Data</span>
             <p className=" text-[#54626A] text-lg mt-4">
@@ -260,7 +260,7 @@ const FourthSection = () => {
           {/* 3 */}
           <div>
             <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
-              <img src="/images/fluent-security-group.png" alt="" />
+              <img src="/images/security.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">
               Security Products

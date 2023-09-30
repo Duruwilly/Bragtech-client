@@ -33,19 +33,9 @@ const Heroe = () => {
               harder, to protect organizations.
             </p>
           </div>
-          {/* <div className="h-[382px] pr-[65.38p] flex justify-start">
-            <div className="h-[382px] justify-center flex">
-              <div className="w-[450px] h-[382px] relative">
-                <div className="w-[205px] h-[90.13px] left-0 top-0 rounded-3xl absolute bg-[#FF8355]"></div>
-                <div className="w-[95px] h-[150.23px] left-[228px] rounded-3xl top-[231.77px] absolute bg-[#B50A0C]"></div>
-                <div className="w-[100px] h-[250.69px] left-[350px] top-0 rounded-3xl absolute bg-[#FF8355]"></div>
-                <div className="w-[95px] h-[90.13px] left-[228px] top-0 absolute rounded-3xl bg-[#B50A0C]"></div>
-                <div className="w-[205px] h-[150.23px] left-0 top-[231.77px] rounded-3xl absolute bg-[#FF8355]"></div>
-                <div className="w-[100px] h-[114.40px] left-[350px] top-[267.60px] rounded-3xl absolute bg-[#B50A0C]"></div>
-                <div className="w-[326px] h-[105.16px] left-0 top-[109.45px] rounded-3xl absolute bg-[#B50A0C]"></div>
-              </div>
-            </div>
-          </div> */}
+          <div className="max-w-[450px] h[382px] ">
+            <img src="/images/whyHeroe.png" alt="" className="w-full p-0" />
+          </div>
         </div>
       </Section>
     </div>
