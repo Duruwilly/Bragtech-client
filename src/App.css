@@ -54,6 +54,72 @@
   }
 }
 
+/***
+=============================================
+    Thm Btn
+=============================================
+***/
+.thm-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  border: none;
+  background-color: #b50a0c;
+  color: #ffffff;
+  font-size: 12px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  overflow: hidden;
+  border: 1px solid #b50a0c;
+}
+
+.thm-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+  border: 1px solid #b50a0c;
+  color: #ffffff;
+  transition: 0.5s;
+  transform-origin: bottom;
+  transform: translateY(-100%) rotateX(90deg);
+}
+
+.thm-btn:hover::before {
+  transform: translateY(0) rotateX(0deg);
+}
+
+.thm-btn::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #b50a0c;
+  color: #ffffff;
+  transition: 0.5s;
+  transform-origin: top;
+  transform: translateY(0) rotateX(0deg);
+}
+
+.thm-btn:hover::after {
+  transform: translateY(100%) rotateX(90deg);
+}
+
 /* nav and mobile-nav */
 .mobile-wrapper {
   z-index: 999;

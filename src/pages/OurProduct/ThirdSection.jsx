@@ -13,7 +13,10 @@ const ThirdSection = () => {
             Bragtech.
           </p>
           <div className="">
-            <button className="text-center text-white text-base pt-6 pb-6 px-16 bg-primary rounded-[4px] border border-primary justify-end items-start flex">
+            <button
+              data-text=" Try it Now"
+              className="text-center text-white text-base pt-6 pb-6 px-16 bg-primary rounded-[4px] hover:bg-transparent hover:text-[#343a40] justify-end items-start flex thm-btn"
+            >
               Try it Now
             </button>
           </div>

@@ -14,7 +14,10 @@ const Heroe = () => {
               at scale, Bragtech is the user-friendly zero-trust security
               platform for all users, all devices and all applications
             </p>
-            <button className=" py-5 px-4 bg-[#B50A0C] rounded-[4px] border border-primary text-center text-white text-base mt-6">
+            <button
+              data-text="Watch Our Product Overview Video"
+              className=" py-5 px-4 bg-[#B50A0C] rounded-[4px] hover:bg-transparent hover:text-[#343a40] text-center text-white mt-6 thm-btn"
+            >
               Watch Our Product Overview Video
             </button>
           </div>

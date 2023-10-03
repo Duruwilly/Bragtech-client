@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "../../components/section/Section";
 import PrimaryButton from "../../components/common/PrimaryButton";
+import { Link } from "react-router-dom";
 
 const SecondSection = () => {
   return (
@@ -22,11 +23,15 @@ const SecondSection = () => {
               </p>
             </div>
             <div className="mt-3">
-              <PrimaryButton
-                transparent={false}
-                title="Contact Sales"
-                path="contact-sales"
-              />
+              <Link to="/contact-sales">
+                <button
+                  type="button"
+                  data-text="Contact Sales"
+                  className="rounded-[4px] text-xs p-[10px] hover:bg-transparent hover:text-[#343a40] bg-primary text-white thm-btn"
+                >
+                  Contact Sales
+                </button>
+              </Link>
             </div>
           </div>
           <div className="max-w-[340px] max-h-[250px] flex justify-center items-center">
