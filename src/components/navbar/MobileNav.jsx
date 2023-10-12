@@ -1,22 +1,10 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import PrimaryButton from "../common/PrimaryButton";
-import { useGlobalContext } from "../../context/GlobalContext";
+import { navbarMenus } from "../Navmenus";
 
 const MobileNav = ({ toggle }) => {
-  const { scrollToSection, solutions } = useGlobalContext();
-
-  const navigate = useNavigate();
-
-  const scrollToSolutions = () => {
-    if (solutions.current === null) {
-      navigate("/");
-    } else {
-      scrollToSection(solutions);
-    }
-  };
-
   return (
     <nav className="mobile-nav_content text-black">
       <div className="flex justify-between">
@@ -34,7 +22,7 @@ const MobileNav = ({ toggle }) => {
         </span>
       </div>
       <div className="mobile-nav_container mt-12">
-        {/* {navbarMenus.map((nav) => (
+        {navbarMenus.map((nav) => (
           <NavLink
             to={nav.path}
             key={nav.id}
@@ -46,8 +34,8 @@ const MobileNav = ({ toggle }) => {
               <li className="">{nav.title}</li>
             </ul>
           </NavLink>
-        ))} */}
-        <ul className="" onClick={toggle}>
+        ))}
+        {/* <ul className="" onClick={toggle}>
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -91,7 +79,7 @@ const MobileNav = ({ toggle }) => {
           >
             <li className="py-6">Why Bragtech</li>
           </NavLink>
-        </ul>
+        </ul> */}
       </div>
       <div className="absolute bottom-5">
         <div className="w-full" onClick={toggle}>

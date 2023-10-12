@@ -41,55 +41,9 @@ const SixthSection = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row items-center justify-between gap-7 lg:gap-0">
-          <div className="lg:w-[522.23px]">
-            <h4 className="text-white text-2xl font-bold">
-              Use Cases for Simple Security Strategies
-            </h4>
-            <div className="flex items-cente gap-4 mt-3">
-              <FaCheckCircle color="#B50A0C" size={40} />
-              <p>
-                <span className="text-white text-lg font-bold">
-                  Zero Trust:
-                </span>
-                <span className="text-white text-lg break-words">
-                  {" "}
-                  Secure the perimeterless, work-from-anywhere world with our
-                  Zero Trust capabilities for the workforce.
-                </span>
-              </p>
-            </div>
-            {/*  */}
-            <div className="flex items-cente gap-4 mt-3">
-              <FaCheckCircle color="#B50A0C" size={40} />
-              <p>
-                <span className="text-white text-lg font-bold">
-                  Passwordless:
-                </span>
-                <span className="text-white text-lg break-words">
-                  {" "}
-                  Give users a frictionless login experience, while
-                  strengthening against overall security risks.
-                </span>
-              </p>
-            </div>
-            {/*  */}
-            <div className="flex items-cente gap-4 mt-3">
-              <FaCheckCircle color="#B50A0C" size={40} />
-              <p>
-                <span className="text-white text-lg font-bold">
-                  Phishing Prevention:
-                </span>
-                <span className="text-white text-lg break-words">
-                  {" "}
-                  Secure your workforce against phishing attacks with strong
-                  multi-factor authentication, device trust and more.
-                </span>
-              </p>
-            </div>
-          </div>
           {/* second row */}
-          <div className="lg:w-[522.23px]">
-            <h4 className="text-white text-2xl font-bold">
+          <div className="lg:w[522.23px]">
+            <h4 className="text-white text-2xl font-bold mb-5">
               Supporting Your Security Goals
             </h4>
             <div className="flex items-cente gap-4 mt-3">

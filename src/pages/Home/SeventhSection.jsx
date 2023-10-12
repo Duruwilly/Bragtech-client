@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Section from "../../components/section/Section";
 
 const SeventhSection = () => {
@@ -5,7 +6,6 @@ const SeventhSection = () => {
     <div className="flex flex-col items-center py-[60px] bg-[#F7F7F7]">
       <Section>
         <h2 className="text-[#363F44] text-4xl font-bold break-words mb-10">
-          {/* New and Noteworthy */}
           Services
         </h2>
         <div className="grid grid-cols-3 homeseventhSection-grid">
@@ -79,6 +79,12 @@ const SeventhSection = () => {
               by clicking below
             </p>
           </div>
+        </div>
+        <div className="text-center mt-6">
+          {" "}
+          <Link to="/services" className="text-[#363F44] text-3xl font-bold">
+            Read More
+          </Link>
         </div>
       </Section>
     </div>

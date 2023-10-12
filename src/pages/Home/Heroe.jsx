@@ -1,10 +1,7 @@
 import PrimaryButton from "../../components/common/PrimaryButton";
 import { Link } from "react-router-dom";
-import { useGlobalContext } from "../../context/GlobalContext";
 
 const Heroe = () => {
-  const { scrollToSection, solutions } = useGlobalContext();
-
   return (
     <div className="flex flex-col items-center pt-[64px] pb-[52px] bg-[#F7F7F7]">
       <section className="section-container px-6">
@@ -52,12 +49,9 @@ const Heroe = () => {
             <Link to="why-bragtech" className="underline">
               <li>Why Pick Bragtech</li>
             </Link>
-            <span
-              onClick={() => scrollToSection(solutions)}
-              className="underline cursor-pointer"
-            >
+            <Link to="/solutions" className="underline cursor-pointer">
               <li>Security Solutions</li>
-            </span>
+            </Link>
             <Link className="underline">
               <li>News & Updates</li>
             </Link>

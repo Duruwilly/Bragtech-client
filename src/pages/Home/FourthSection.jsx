@@ -1,24 +1,15 @@
 import { Link } from "react-router-dom";
 import Section from "../../components/section/Section";
 import { FaCheckCircle } from "react-icons/fa";
-import { useGlobalContext } from "../../context/GlobalContext";
 
 const FourthSection = () => {
-  const { solutions } = useGlobalContext();
-
   return (
-    <div
-      className="flex flex-col items-center h-[68p] pb-[32px] pt-[70px]"
-      ref={solutions}
-    >
+    <div className="flex flex-col items-center h-[68p] pb-[32px] pt-[70px]">
       <Section>
         <div>
           <span className=" text-primary text-2xl font-bold leading-7">
             Solutions
           </span>
-          {/* <span className="text-[#B50A0C] text-2xl font-bold leading-7 ml-2">
-            Products
-          </span> */}
           <p className="text-[#54626A] text-lg font-light mt-2">
             Partner Solutions we offer
           </p>
@@ -243,6 +234,17 @@ const FourthSection = () => {
             </div>
           </div>
         </div>
+        <Link
+          to="/solutions"
+          className="w-full flex items-center justify-center"
+        >
+          <button
+            data-text="View more"
+            className="py-3 px-8 bg-[#B50A0C] rounded-[4px] hover:bg-transparent hover:text-[#343a40] text-center text-white mt-6 thm-btn"
+          >
+            View more
+          </button>
+        </Link>
       </Section>
     </div>
   );

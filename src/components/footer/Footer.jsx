@@ -43,7 +43,9 @@ function Footer() {
           <li className="text-2xl lg:text-xl font-semibold mb-4">About</li>
           {/* <li className="text-base font-medium">How it works</li> */}
           {/* <li className="text-base font-medium">Featured</li> */}
-          <li className="text-base font-medium">Partnership</li>
+          <Link to="/partners">
+            <li className="text-base font-medium">Partnership</li>
+          </Link>
           {/* <li className="text-base font-medium">Business Relation</li> */}
         </ul>
         <ul className="list-none text-[#D7D7D7] space-y-6 mr-8 w-[152px]">
