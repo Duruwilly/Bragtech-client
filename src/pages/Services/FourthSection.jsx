@@ -1,5 +1,6 @@
 import React from "react";
 import Section from "../../components/section/Section";
+import { Link } from "react-router-dom";
 
 const FourthSection = () => {
   return (
@@ -22,9 +23,11 @@ const FourthSection = () => {
               helping you understand trends and deriving insights from your data
               so that you can make tactical and strategic business decisions.
             </p>
-            <button className="w-[159px] h-[58px] p-[10px] rounded-lg border border-black text-center text-[#222222] text-base break-words">
-              Contact Us Now
-            </button>
+            <Link to="/contact-sales">
+              <button className="w-[159px] h-[58px] p-[10px] rounded-lg border border-black text-center text-[#222222] text-base break-words">
+                Contact Us Now
+              </button>
+            </Link>
           </div>
         </div>
       </Section>

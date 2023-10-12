@@ -5,14 +5,14 @@ export const navbarMenus = [
     id: 1,
   },
   {
-    path: "/our-product",
-    title: "Our Product",
-    id: 2,
-  },
-  {
     path: "/solutions",
     title: "Solutions",
     id: 3,
+  },
+  {
+    path: "/services",
+    title: "Services",
+    id: 2,
   },
   {
     path: "/our-clients",

@@ -7,12 +7,18 @@ const LastSection = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-5 lg:gap-0">
           <div>
             {" "}
-            <span className="text-[#363F44] text-3xl font-bold break-words mr-2">
-              Your Next Step:
+            <span
+              to="/services"
+              className="text-[#363F44] text-3xl font-bold break-words mr-2"
+            >
+              Read More:
             </span>
-            <span className="text-[#54626A] text-3xl break-words">
+            <Link
+              to="/services"
+              className="text-[#54626A] text-3xl break-words"
+            >
               Experience Bragtech now with a free trial
-            </span>
+            </Link>
           </div>
         </div>
       </div>

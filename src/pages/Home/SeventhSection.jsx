@@ -5,7 +5,8 @@ const SeventhSection = () => {
     <div className="flex flex-col items-center py-[60px] bg-[#F7F7F7]">
       <Section>
         <h2 className="text-[#363F44] text-4xl font-bold break-words mb-10">
-          New and Noteworthy
+          {/* New and Noteworthy */}
+          Services
         </h2>
         <div className="grid grid-cols-3 homeseventhSection-grid">
           {/* first row */}

@@ -1,7 +1,10 @@
 import PrimaryButton from "../../components/common/PrimaryButton";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../../context/GlobalContext";
 
 const Heroe = () => {
+  const { scrollToSection, solutions } = useGlobalContext();
+
   return (
     <div className="flex flex-col items-center pt-[64px] pb-[52px] bg-[#F7F7F7]">
       <section className="section-container px-6">
@@ -36,7 +39,7 @@ const Heroe = () => {
             <img
               src="/images/heroeImg.jpeg"
               alt="logo"
-              className=" w-full p-0 m-0"
+              className=" w-full p-0 m-0 hover:scale-105 duration-500 cursor-pointer"
             />
           </div>
         </div>
@@ -49,9 +52,12 @@ const Heroe = () => {
             <Link to="why-bragtech" className="underline">
               <li>Why Pick Bragtech</li>
             </Link>
-            <Link to="solutions" className="underline">
+            <span
+              onClick={() => scrollToSection(solutions)}
+              className="underline cursor-pointer"
+            >
               <li>Security Solutions</li>
-            </Link>
+            </span>
             <Link className="underline">
               <li>News & Updates</li>
             </Link>

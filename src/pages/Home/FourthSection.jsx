@@ -1,18 +1,24 @@
 import { Link } from "react-router-dom";
 import Section from "../../components/section/Section";
 import { FaCheckCircle } from "react-icons/fa";
+import { useGlobalContext } from "../../context/GlobalContext";
 
 const FourthSection = () => {
+  const { solutions } = useGlobalContext();
+
   return (
-    <div className="flex flex-col items-center h-[68p] pb-[32px]">
+    <div
+      className="flex flex-col items-center h-[68p] pb-[32px] pt-[70px]"
+      ref={solutions}
+    >
       <Section>
         <div>
-          <span className=" text-[#363F44] text-2xl font-bold leading-7">
-            OEM
+          <span className=" text-primary text-2xl font-bold leading-7">
+            Solutions
           </span>
-          <span className="text-[#B50A0C] text-2xl font-bold leading-7 ml-2">
+          {/* <span className="text-[#B50A0C] text-2xl font-bold leading-7 ml-2">
             Products
-          </span>
+          </span> */}
           <p className="text-[#54626A] text-lg font-light mt-2">
             Partner Solutions we offer
           </p>
@@ -149,52 +155,9 @@ const FourthSection = () => {
               </Link>
             </div>
           </div>
-          {/* 1 */}
-          <div>
-            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
-              <img src="/images/device_icon.svg.png" alt="" />
-            </div>
-            <span className="text-[#363F44] text-lg font-bold">MiddleWare</span>
-            <p className=" text-[#54626A] text-lg mt-4">
-              Know the health of every device
-              <br />
-              accessing your applications, managed
-              <br />
-              or not.
-            </p>
-            <div className="flex items-center gap-4 mt-6">
-              <FaCheckCircle color="#B50A0C" size={20} />
-              <Link to="/contact-sales">
-                <span className="text-[#B50A0C] text-lg underline">
-                  Explore Device Trust
-                </span>
-              </Link>
-            </div>
-          </div>
-          {/* 2 */}
-          <div>
-            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
-              <img src="/images/visuals.png" alt="" />
-            </div>
-            <span className="text-[#363F44] text-lg font-bold">
-              Virtualisation
-            </span>
-            <p className=" text-[#54626A] text-lg mt-4">
-              Provide simpler, safer access with just
-              <br />
-              one username and password.
-            </p>
-            <div className="flex items-center gap-4 mt-6">
-              <FaCheckCircle color="#B50A0C" size={20} />
-              <Link to="/contact-sales">
-                <span className="text-[#B50A0C] text-lg underline">
-                  Learn About SSO
-                </span>
-              </Link>
-            </div>
-          </div>
+
           {/* 3 */}
-          <div>
+          {/* <div>
             <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
               <img src="/images/software.png" alt="" />
             </div>
@@ -212,10 +175,10 @@ const FourthSection = () => {
                 </span>
               </Link>
             </div>
-          </div>
+          </div> */}
           {/* 1 */}
           <div>
-            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-8">
               <img src="/images/application.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">
@@ -239,7 +202,7 @@ const FourthSection = () => {
           </div>
           {/* 2 */}
           <div>
-            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-8">
               <img src="/images/bigData.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">Big Data</span>
@@ -259,7 +222,7 @@ const FourthSection = () => {
           </div>
           {/* 3 */}
           <div>
-            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-4">
+            <div className="w-[100px] h-[50px] lg:w-[140px] lg:h-[90px] mb-8">
               <img src="/images/security.png" alt="" />
             </div>
             <span className="text-[#363F44] text-lg font-bold">

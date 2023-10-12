@@ -2,7 +2,7 @@ import { lazy } from "react";
 
 const HomePage = lazy(() => import("../pages/Home"));
 
-const OurProduct = lazy(() => import("../pages/OurProduct"));
+const OurProduct = lazy(() => import("../pages/Services"));
 
 const Solutions = lazy(() => import("../pages/Solutions"));
 
@@ -20,7 +20,7 @@ export const appRoutes = [
     component: HomePage,
   },
   {
-    path: "/our-product",
+    path: "/services",
     component: OurProduct,
   },
   {
