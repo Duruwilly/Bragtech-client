@@ -1,12 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
-import { navbarMenus } from "../Navmenus";
 import PrimaryButton from "../common/PrimaryButton";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import MobileNav from "./MobileNav";
+import { useGlobalContext } from "../../context/GlobalContext";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
+  const { menusData, companySettings } = useGlobalContext();
 
   const toggleMobileNav = () => {
     setMobileNav(!mobileNav);
@@ -20,24 +21,28 @@ const Navbar = () => {
           <div className="max-w-[80px] max-h-[90px] flex justify-center items-center">
             <Link to="/">
               <img
-                src="/images/logo.png"
+                src={companySettings?.company_logo}
                 alt="logo"
                 className=" w-full p-0 m-0"
               />
             </Link>
           </div>
           {/* menus */}
-          <ul className="hidden navMenu items-center text-[#54626A] text-sm list-none">
-            {navbarMenus.map((route) => (
-              <NavLink
-                to={route.path}
-                key={route.id}
-                className={({ isActive }) =>
-                  isActive ? "font-bold" : "font-normal"
-                }
-              >
-                <li className="pl-4">{route.title}</li>
-              </NavLink>
+          <ul className="hidden navMenu items-center text-[#54626A] text-base list-none">
+            {menusData?.main_menus.map((route) => (
+              <>
+                {route.status === "active" && (
+                  <NavLink
+                    to={route.url}
+                    key={route.id}
+                    className={({ isActive }) =>
+                      isActive ? "font-bold" : "font-normal"
+                    }
+                  >
+                    <li className="pl-4">{route.name}</li>
+                  </NavLink>
+                )}
+              </>
             ))}
           </ul>
         </div>

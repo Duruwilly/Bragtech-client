@@ -1,44 +1,63 @@
+import { Link } from "react-router-dom";
 import Section from "../../components/section/Section";
+import why from "../../../src/assets/Why.png";
+import { usePageContext } from "./context/PageContext";
+
+const heroeBg = {
+  width: "100%",
+  padding: "0",
+  backgroundImage: `url(${why})`,
+  backgroundPosition: "center",
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  // height: "70vh",
+  position: "relative",
+  textAlign: "center",
+  color: "white",
+};
 
 const Heroe = () => {
+  const { data } = usePageContext();
   return (
-    <div className="flex flex-col items-center bg-[#F7F7F7] pt-[52px] pb-[64px] flex-1">
-      <Section>
-        <div className="flex flex-col-reverse xl:flex-row justify-between items-center xl:gap-0 gap-7">
-          <div className="xl:w-[572.63px]">
-            <h3 className="text-[#363F44] text-4xl font-semibold leading-[48px] pb-6">
-              Why Bragtech?
-            </h3>
-            <p className="text-[#54626A] text-xl font-normal leading-[24px]">
-              Cyber attackers are a persistent bunch. They’ve found
-              <br />
-              new ways to circumvent weaker multi-factor
-              <br />
-              authentication solutions, placing at risk what you had
-              <br />
-              once secured. Some MFA providers have responded with
-              <br />
-              blunt new defenses that keep bad actors out, but also
-              <br />
-              make it more difficult for trusted employees to get in. This
-              <br />
-              doesn’t work in our new world of hybrid work, where
-              <br />
-              people expect flexibility and rely on the speed and
-              <br />
-              consistency of their remote access to get the job done.
-              <br />
-              We need stronger security that works smarter, not just
-              <br />
-              harder, to protect organizations.
+    <>
+      <div
+        style={heroeBg}
+        className="flex flex-col items-center pt-[52px] pb-[64px] flex-1"
+      >
+        <Section>
+          <div className="heroe-overlay flex flex-col items-center justify-center">
+            <div className="xl:w-[730px]">
+              <h3 className=" text-5xl font-bold pb-6">{data?.header_title}</h3>
+              <p className="w-[] text-lg">{data?.header_description}</p>
+              {data?.header_button_status === "active" && (
+                <Link to={data?.header_button_link}>
+                  <button
+                    data-text={data?.header_button_text}
+                    className="py-5 px-8 bg-primary rounded-[4px] hover:bg-transparent hover:text-white text-center text-white mt-6 thm-btn"
+                  >
+                    {data?.header_button_text}
+                  </button>
+                </Link>
+              )}
+            </div>
+          </div>
+        </Section>
+      </div>
+      <div className="bg-primary w-full py-4 flex items-center justify-center gap-4 lg:px-[130x]">
+        <Section>
+          <div className="flex red-bg items-center justify-between">
+            <p className="font-bold text-white text-xl text-center">
+              Are you in search of quality cybersecurity services or solutions?
             </p>
+            <Link to="/contact-sales">
+              <button className="py-3 px-8 bg-white rounded-[4px] hover:bg-white hover:text-black text-center text-black">
+                CONTACT US NOW
+              </button>
+            </Link>
           </div>
-          <div className="max-w-[450px] h[382px] ">
-            <img src="/images/whyHeroe.png" alt="" className="w-full p-0" />
-          </div>
-        </div>
-      </Section>
-    </div>
+        </Section>
+      </div>
+    </>
   );
 };
 

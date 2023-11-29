@@ -2,9 +2,11 @@ import React from "react";
 import { FaTimes } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import PrimaryButton from "../common/PrimaryButton";
-import { navbarMenus } from "../Navmenus";
+import { useGlobalContext } from "../../context/GlobalContext";
 
 const MobileNav = ({ toggle }) => {
+  const { menusData } = useGlobalContext();
+
   return (
     <nav className="mobile-nav_content text-black">
       <div className="flex justify-between">
@@ -22,7 +24,7 @@ const MobileNav = ({ toggle }) => {
         </span>
       </div>
       <div className="mobile-nav_container mt-12">
-        {navbarMenus.map((nav) => (
+        {menusData.map((nav) => (
           <NavLink
             to={nav.path}
             key={nav.id}

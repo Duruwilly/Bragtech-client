@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Section from "../../components/section/Section";
+import axios from "axios";
+import { BASE_URL } from "../../constants/Base-urls";
 
 const ContactForm = () => {
   const [formState, setFormState] = useState({
@@ -12,7 +14,10 @@ const ContactForm = () => {
     country: "",
     phoneNumber: "",
     message: "",
+    consent: "yes",
+    consent2: "yes",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e?.target;
@@ -20,6 +25,31 @@ const ContactForm = () => {
       ...state,
       [name]: value,
     }));
+  };
+
+  const sendForm = async () => {
+    setLoading(true);
+    const response = await axios.post(
+      `${BASE_URL}/api/v1/contact-form`,
+      formState
+    );
+    if (response.data.message === "success") {
+      setFormState((state) => ({
+        ...state,
+        firstName: "",
+        lastName: "",
+        businessEmail: "",
+        title: "",
+        companyName: "",
+        companySize: "",
+        country: "",
+        phoneNumber: "",
+        message: "",
+        consent: "",
+        consent2: "",
+      }));
+      setLoading(false);
+    }
   };
 
   return (
@@ -30,11 +60,17 @@ const ContactForm = () => {
             <h3 className="text-[#363F44] text-[46px] font-bold">
               Contact Sales
             </h3>
-            <p className="text-[#54626A] text-lg xl:w-[345.56px]">
+            {/* <p className="text-[#54626A] text-lg xl:w-[345.56px]">
               This form is for demo requests only. Please visit the following
               page to request customer support.
-            </p>
-            <form action="" className="space-y-4 mt-3 w-full max-w-[400px]">
+            </p> */}
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                sendForm();
+              }}
+              className="space-y-4 mt-3 w-full max-w-[400px]"
+            >
               <input
                 name="firstName"
                 value={formState.firstName}
@@ -78,8 +114,8 @@ const ContactForm = () => {
               <input
                 name="companySize"
                 value={formState.companySize}
-                type="text
-                 onChange={handleChange}"
+                type="text"
+                onChange={handleChange}
                 className="w-full py-3 px-4 bg-white rounded-[4px] text-[#54626A] text-base border border-[#bfbbbb] shadow-md"
                 placeholder="Company Size *"
               />
@@ -115,8 +151,18 @@ const ContactForm = () => {
               <div className="flex items-center gap-2">
                 <input
                   type="checkbox"
-                  name=""
+                  name="consent"
                   id="consent"
+                  value={formState.consent}
+                  onChange={(e) => {
+                    const { checked } = e.target;
+                    if (checked) {
+                      setFormState((state) => ({
+                        ...state,
+                        consent: e.target.value,
+                      }));
+                    }
+                  }}
                   className="bg-white rounded-[4px] border border-[#bfbbbb]"
                 />
                 <label htmlFor="consent" className="text-[#54626A] text-sm">
@@ -126,16 +172,29 @@ const ContactForm = () => {
               <div className="flex items-center gap-2">
                 <input
                   type="checkbox"
-                  name=""
+                  name="consent2"
                   id="check2"
+                  value={formState.consent2}
+                  onChange={(e) => {
+                    const { checked } = e.target;
+                    if (checked) {
+                      setFormState((state) => ({
+                        ...state,
+                        consent2: e.target.value,
+                      }));
+                    }
+                  }}
                   className="bg-white rounded-[4px] border border-[#bfbbbb]"
                 />
                 <label htmlFor="check2" className="text-[#54626A] text-sm">
                   I am an MSP, IT Provider or Reseller.
                 </label>
               </div>
-              <button className=" py-3 px-9 bg-[#FF4500] shadow-md rounded-[4px] text-center text-white text-base">
-                Submit
+              <button
+                disabled={loading}
+                className=" py-3 px-9 bg-[#FF4500] shadow-md rounded-[4px] text-center text-white text-base"
+              >
+                {loading ? "Submitting..." : "Submit"}
               </button>
             </form>
           </div>

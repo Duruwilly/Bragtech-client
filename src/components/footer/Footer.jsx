@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { useGlobalContext } from "../../context/GlobalContext";
 
 function Footer() {
+  const { menusData, companySettings } = useGlobalContext();
   const scrollTop = () => {
     window.scrollTo({
       top: 0,
@@ -28,7 +30,7 @@ function Footer() {
           <div className="max-w-[80px] max-h-[90px]">
             <Link to="/">
               <img
-                src="/images/logo.png"
+                src={companySettings?.company_logo}
                 alt="logo"
                 className="w-full p-0 m-0"
               />
@@ -79,28 +81,17 @@ function Footer() {
         <div>
           <p className="text-white text-xs font-bold">&copy; 2023 Bragtech</p>
           <div className="flex flex-wrap items-center">
-            <p className="text-white text-[11.20px] mr-1">Terms of Service |</p>
-            <p className="text-white text-[11.20px] mr-1">
-              Privacy Statement |
-            </p>
-            <p className="text-white text-[11.20px] mr-1">
-              Bragtech Data Sheet |
-            </p>
-            <p className="text-white text-[11.20px] mr-1">
-              Copyright Dispute Policy |
-            </p>
-            <p className="text-white text-[11.20px] mr-1">
-              Service Level Agreement |
-            </p>
-            <p className="text-white text-[11.20px] mr-1">
-              Security Response |
-            </p>
-            <p className="text-white text-[11.20px] mr-1">
-              Business Continuity During COVID-19 |
-            </p>
-            <p className="text-white text-[11.20px] mr-1">
-              Manage Cookie Preferences
-            </p>
+            {menusData?.footer_menus.map((item) => (
+              <>
+                {item.status === "active" && (
+                  <Link key={item.id} to={item.url}>
+                    <p className="text-white text-[11.20px] mr-1">
+                      {item.name} |
+                    </p>
+                  </Link>
+                )}
+              </>
+            ))}
           </div>
         </div>
       </div>

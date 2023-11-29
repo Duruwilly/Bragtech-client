@@ -1,96 +1,98 @@
 import { Link } from "react-router-dom";
 import Section from "../../components/section/Section";
 import { FaCheckCircle } from "react-icons/fa";
+import { useHomeContext } from "./context/HomeContext";
+import { stripHtmlTags } from "../../utils/helpers";
 
 const SixthSection = () => {
+  const { data } = useHomeContext();
+
   return (
-    <div className="flex flex-col items-center py-[60px] bg-[#222222]">
-      {/* <div className="max-w-[80px] max-h-[90px] absolute right-9 bottom-6">
-        <Link to="/">
-          <img
-            src="/images/whatsapp-icon.gif"
-            alt="whatsapp"
-            className=" w-full p-0 m-0"
-          />
-        </Link>
-      </div> */}
-      <Section>
-        <div className="flex flex-col lg:flex-row justify-between items-cente lg:items-star pb-[48px] gap-8 lg:gap-0">
-          <div className="max-w-[500p] max-h[650px]">
-            <img src="/images/img10.png" alt="" className=" w-full p-0 m-0" />
-          </div>
-          <div className="lg:w-[522.23px]">
-            <h2 className="text-white text-4xl font-bold leading-9 break-words mb-4">
-              Solutions for Every Security
-              <br />
-              Goal
-            </h2>
-            <p className=" text-white text-lg break-words mb-5">
-              From compliance to planning for security’s future, Bragetch has
-              the access and authentication tools to help you get where you need
-              to be. See what we can do for you.{" "}
-            </p>
-            <Link
-              to="/contact-sales"
-              className="rounded-[4px] w-full h-[58px] text-xs py-[20px] px-[45px] border border-white text-white"
-            >
-              <button className="mt-4 text-base text-center tracking-[0.80px]">
-                Contact Sales
-              </button>
-            </Link>
-          </div>
+    <>
+      {data?.section_3.status === "active" && (
+        <div className="flex flex-col items-center py-[60px] bg-[#222222]">
+          <Section>
+            <div className="flex flex-col lg:flex-row justify-between items-cente lg:items-star pb-[48px] gap-8 lg:gap-0">
+              <div className="max-w-[500p] max-h[650px]">
+                <img
+                  src={data?.section_3?.left_image}
+                  alt=""
+                  className=" w-full p-0 m-0"
+                />
+              </div>
+              <div className="lg:w-[522.23px]">
+                <h2 className="text-white text-4xl font-bold leading-9 break-words mb-4">
+                  {data?.section_3?.title_1}
+                </h2>
+                <p className=" text-white text-lg break-words mb-5">
+                  {stripHtmlTags(data?.section_3?.description_1)}
+                </p>
+                <Link
+                  to={data?.section_3?.button_1_link}
+                  className="rounded-[4px] w-full h-[58px] text-xs py-[20px] px-[45px] border border-white text-white"
+                >
+                  <button className="mt-4 text-base text-center tracking-[0.80px]">
+                    {data?.section_3?.button_1_text}
+                  </button>
+                </Link>
+              </div>
+            </div>
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-7 lg:gap-0">
+              {/* second row */}
+              <div className="lg:w[522.23px]">
+                <h4 className="text-white text-2xl font-bold mb-5">
+                  Supporting Your Security Goals
+                </h4>
+                <div className="flex items-cente gap-4 mt-3">
+                  <FaCheckCircle color="#B50A0C" size={40} />
+                  {data?.section_3?.bullet_1_status === "active" && (
+                    <p>
+                      <span className="text-white text-lg font-bold">
+                        {data?.section_3?.bullet_1_title}
+                      </span>
+                      <span className="text-white text-lg break-words">
+                        {" "}
+                        {data?.section_3?.bullet_1_description}
+                      </span>
+                    </p>
+                  )}
+                </div>
+                {/*  */}
+                <div className="flex items-cente gap-4 mt-3">
+                  <FaCheckCircle color="#B50A0C" size={40} />
+                  {data?.section_3?.bullet_2_status === "active" && (
+                    <p>
+                      <span className="text-white text-lg font-bold">
+                        {data?.section_3?.bullet_2_title}
+                      </span>
+                      <span className="text-white text-lg break-words">
+                        {" "}
+                        {data?.section_3?.bullet_2_description}
+                      </span>
+                    </p>
+                  )}
+                </div>
+                {/*  */}
+                <div className="flex items-cente gap-4 mt-3">
+                  <FaCheckCircle color="#B50A0C" size={35} />
+                  {data?.section_3?.bullet_3_status === "active" && (
+                    <p>
+                      <span className="text-white text-lg font-bold">
+                        {data?.section_3?.bullet_3_title}
+                      </span>
+                      <span className="text-white text-lg break-words">
+                        {" "}
+                        {data?.section_3?.bullet_3_description}
+                      </span>
+                    </p>
+                  )}
+                </div>
+              </div>
+            </div>
+          </Section>
         </div>
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-7 lg:gap-0">
-          {/* second row */}
-          <div className="lg:w[522.23px]">
-            <h4 className="text-white text-2xl font-bold mb-5">
-              Supporting Your Security Goals
-            </h4>
-            <div className="flex items-cente gap-4 mt-3">
-              <FaCheckCircle color="#B50A0C" size={40} />
-              <p>
-                <span className="text-white text-lg font-bold">
-                  Meet Compliance with Bragtech:
-                </span>
-                <span className="text-white text-lg break-words">
-                  {" "}
-                  Meet requirements for compliant, effective security in your
-                  industry and company.
-                </span>
-              </p>
-            </div>
-            {/*  */}
-            <div className="flex items-cente gap-4 mt-3">
-              <FaCheckCircle color="#B50A0C" size={40} />
-              <p>
-                <span className="text-white text-lg font-bold">
-                  Bragtech Documentation:
-                </span>
-                <span className="text-white text-lg break-words">
-                  {" "}
-                  Bragtech supports your devices and applications with
-                  easy-to-use installation and configuration documents
-                </span>
-              </p>
-            </div>
-            {/*  */}
-            <div className="flex items-cente gap-4 mt-3">
-              <FaCheckCircle color="#B50A0C" size={35} />
-              <p>
-                <span className="text-white text-lg font-bold">
-                  Our Care <span className="underline">Quick Start</span>:
-                </span>
-                <span className="text-white text-lg break-words">
-                  {" "}
-                  Our experts are at your service with premium user-friendly
-                  customer support.
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </Section>
-    </div>
+      )}
+    </>
   );
 };
 

@@ -9,7 +9,7 @@ export const Categories = ({ title, items }) => {
   };
 
   return (
-    <div>
+    <div key={items.id}>
       <div
         className={`w-full py-5 px-8 bg-[#222222] rounded-[5px] border border-[#B50A0C] ${
           isOpen ? "mb-2" : "mb-8"
@@ -31,14 +31,18 @@ export const Categories = ({ title, items }) => {
       {isOpen && (
         <div className="flex flex-wrap gap-8 mt-2 mb-8">
           {items.map((item, index) => (
-            <div className="" key={index}>
-              <img src={item.image} alt={item.name} />
-              <div className="flex justify-center items-center">
-                <span className="text-center text-[#404040] text-xs">
-                  {item.name}
-                </span>
-              </div>
-            </div>
+            <>
+              {item.status === "active" && (
+                <div className="" key={index}>
+                  <img src={item.image} alt={item.title} />
+                  <div className="flex justify-center items-center">
+                    <span className="text-center text-[#404040] text-xs">
+                      {item.title}
+                    </span>
+                  </div>
+                </div>
+              )}
+            </>
           ))}
         </div>
       )}

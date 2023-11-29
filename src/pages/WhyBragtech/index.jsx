@@ -3,15 +3,20 @@ import Heroe from "./Heroe";
 import FirstSection from "./FirstSection";
 import SecondSection from "./SecondSection";
 import LastSection from "./LastSection";
+import ThirdSection from "./ThirdSection";
+import PageContextProvider from "./context/PageContext";
 
 const Why = () => {
   return (
-    <Fragment>
-      <Heroe />
-      <FirstSection />
-      <SecondSection />
-      <LastSection />
-    </Fragment>
+    <PageContextProvider>
+      <Fragment>
+        <Heroe />
+        <FirstSection />
+        <SecondSection />
+        <ThirdSection />
+        <LastSection />
+      </Fragment>
+    </PageContextProvider>
   );
 };
 

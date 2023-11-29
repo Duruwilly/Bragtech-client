@@ -1,25 +1,22 @@
 import { Fragment } from "react";
 import Heroe from "./Heroe";
-// import SecondSection from "./SecondSection";
-// import ThirdSection from "./ThirdSection";
 import FourthSection from "./FourthSection";
-// import FifthSection from "./FifthSection";
 import SixthSection from "./SixthSection";
 import SeventhSection from "./SeventhSection";
 import LastSection from "./LastSection";
+import HomeContextProvider from "./context/HomeContext";
 
 const Home = () => {
   return (
-    <Fragment style={{ flex: 1 }}>
-      <Heroe />
-      {/* <SecondSection /> */}
-      {/* <ThirdSection /> */}
-      <FourthSection />
-      {/* <FifthSection /> */}
-      <SixthSection />
-      <SeventhSection />
-      <LastSection />
-    </Fragment>
+    <HomeContextProvider>
+      <Fragment style={{ flex: 1 }}>
+        <Heroe />
+        <FourthSection />
+        <SixthSection />
+        <SeventhSection />
+        <LastSection />
+      </Fragment>
+    </HomeContextProvider>
   );
 };
 

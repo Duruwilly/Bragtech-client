@@ -1,22 +1,51 @@
-import React, { useContext, createContext, useRef } from "react";
+import axios from "axios";
+import React, {
+  useContext,
+  createContext,
+  useRef,
+  useEffect,
+  useState,
+} from "react";
+import { BASE_URL } from "../constants/Base-urls";
 
 const StateContext = createContext();
 
-export const ContextWrapper = ({ children }) => {
-  const solutions = useRef(null);
+export const GlobalContextWrapper = ({ children }) => {
+  const [menusData, setMenusData] = useState();
+  const [companySettings, setCompanySettings] = useState();
 
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef?.current?.offsetTop,
-      behavior: "smooth",
-    });
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(`${BASE_URL}/api/v1/menus`);
+      if (response.data.message === "success") {
+        setMenusData(response.data.data);
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
+
+  const fetchCompanySettingsData = async () => {
+    try {
+      const response = await axios.get(`${BASE_URL}/api/v1/company-settings`);
+      if (response.data.message === "success") {
+        setCompanySettings(response.data.data);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+    fetchCompanySettingsData();
+  }, []);
 
   return (
     <StateContext.Provider
       value={{
-        solutions,
-        scrollToSection,
+        menusData,
+        companySettings,
       }}
     >
       {children}

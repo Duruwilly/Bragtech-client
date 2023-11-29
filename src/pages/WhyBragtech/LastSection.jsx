@@ -1,30 +1,63 @@
 import Section from "../../components/section/Section";
+import { stripHtmlTags } from "../../utils/helpers";
+import { usePageContext } from "./context/PageContext";
 
 const LastSection = () => {
+  const { data } = usePageContext();
+
   return (
-    <div className="flex flex-col items-center bg-[#F5F6F8] relative">
-      <Section>
-        <div className="pt-[64px] pb-[32px] pl-[64px] pr-[63.99px] flex flex-col lg:flex-row justify-between items-center">
-          <p className="text-[#54626A] text-3xl">
-            Want to hear more about how
-            <br />
-            Bragtech’s multi-factor authentication
-            <br />
-            solution is the right choice for your
-            <br />
-            organization? Get your free trial
-            <br />
-            now!
-          </p>
-          <div className="">
-            <button className="text-center text-white text-base pt-6 pb-6 px-16 bg-[#FF4500] rounded-[4px]">
-              Get a Free Trial of Bragtech
-            </button>
-          </div>
+    <>
+      {data?.why_choose_us_status === "active" && (
+        <div className="flex flex-col items-center py-9">
+          <Section>
+            <div className="">
+              <h2 className="text-[#222222] text-4xl font-extrabold text-center mb-3">
+                WHY CHOOSE US
+              </h2>
+            </div>
+            <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-0">
+              <div>
+                <p className="lg:w-[530px] text-lg text-black opacity-60 leading-6 break-words font-light">
+                  {stripHtmlTags(data?.why_choose_us_text)}
+                </p>
+                <div className="mt-8 lg:w-[622px] space-y-5">
+                  <div className="flex gap-5 items-center">
+                    <div>
+                      <p>TECHNICAL KNOW-HOW</p>
+                      <p className=" text-sm text-black opacity-60">
+                        Our partnership with seasoned cybersecurity companies
+                        and professionals ensure we have a base of highly
+                        qualified Security professionals to tailor value-based
+                        solutions and services to our Customers.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-5 items-center">
+                    <div>
+                      <p>AVAILABILITY & PROFESSIONAL SUPPORT</p>
+                      <p className=" text-sm text-black opacity-60">
+                        We are always available to listen and help our
+                        Customers. We do not only provide businesses with
+                        solutions; we also support them.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="max-w-[250px] max-h-[175px] hidden lg:flex justify-center items-center">
+                  <img
+                    src={data?.why_choose_us_image}
+                    alt="whatsapp"
+                    className=" w-full p-0 m-0"
+                  />
+                </div>
+              </div>
+            </div>
+          </Section>
         </div>
-        {/* image here later  */}
-      </Section>
-    </div>
+      )}
+    </>
   );
 };
 

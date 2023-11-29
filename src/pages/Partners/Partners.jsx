@@ -1,20 +1,23 @@
 import { useEffect, useState } from "react";
 import Section from "../../components/section/Section";
+import axios from "axios";
+import { BASE_URL } from "../../constants/Base-urls";
 
 const Partners = () => {
-  const [clientImages, setClientImages] = useState([]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    // Replace 'apiEndpoint' with the actual API endpoint that provides the image URLs.
-    fetch("apiEndpoint")
-      .then((response) => response.json())
-      .then((data) => {
-        // Assuming the API response is an array of image URLs.
-        setClientImages(data);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${BASE_URL}/api/v1/partners`);
+        if (response.data.message === "success") {
+          setData(response.data.data);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchData();
   }, []);
 
   return (
@@ -30,7 +33,15 @@ const Partners = () => {
             </div>
           </div>
           <div className="mt-10 mb-8 flex flex-wrap gap-5">
-            {Array.from({ length: 42 }, (_, index) => (
+            {data?.map((item) => (
+              <div
+                key={item.id}
+                className="bg-white px-6 w-ful h-ful shadow-xl flex justify-center items-center"
+              >
+                <img className="w-[170px]" src={item.image} alt="" />
+              </div>
+            ))}
+            {/* {Array.from({ length: 42 }, (_, index) => (
               <div
                 key={index}
                 className="bg-white px-6 w-ful h-ful shadow-xl flex justify-center items-center"
@@ -41,7 +52,7 @@ const Partners = () => {
                   alt=""
                 />
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       </Section>

@@ -1,20 +1,10 @@
 import { Fragment } from "react";
-import Heroe from "./Heroe";
-import FirstSection from "./FirstSection";
-import SecondSection from "./SecondSection";
-import ThirdSection from "./ThirdSection";
-import FourthSection from "./FourthSection";
-import LastSection from "./LastSection";
+import SolutionsList from "./Solutions";
 
 const Solutions = () => {
   return (
     <Fragment style={{ flex: 1 }}>
-      <Heroe />
-      <FirstSection />
-      <SecondSection />
-      <ThirdSection />
-      <FourthSection />
-      <LastSection />
+      <SolutionsList />
     </Fragment>
   );
 };
