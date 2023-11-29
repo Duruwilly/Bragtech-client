@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Section from "../../components/section/Section";
-import { FaCheckCircle } from "react-icons/fa";
 import axios from "axios";
 import { BASE_URL } from "../../constants/Base-urls";
 

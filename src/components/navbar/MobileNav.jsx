@@ -24,7 +24,7 @@ const MobileNav = ({ toggle }) => {
         </span>
       </div>
       <div className="mobile-nav_container mt-12">
-        {menusData.map((nav) => (
+        {menusData?.main_menus?.map((nav) => (
           <NavLink
             to={nav.path}
             key={nav.id}

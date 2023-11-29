@@ -2,9 +2,6 @@ import PrimaryButton from "../../components/common/PrimaryButton";
 import { Link } from "react-router-dom";
 import { useHomeContext } from "./context/HomeContext";
 import { stripHtmlTags } from "../../utils/helpers";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { BASE_URL } from "../../constants/Base-urls";
 import { useGlobalContext } from "../../context/GlobalContext";
 
 const Heroe = () => {
@@ -53,7 +50,7 @@ const Heroe = () => {
             <div className="flex justify-center items-center mt-8">
               <ul className="flex flex-wrap item-center gap-3 text-[#54626A] font-light list-none">
                 <p>Jump to:</p>
-                {menusData?.jump_menus.map((item) => (
+                {menusData?.jump_menus?.map((item) => (
                   <Link key={item.id} to={item.url} className="underline">
                     <li>{item.name}</li>
                   </Link>

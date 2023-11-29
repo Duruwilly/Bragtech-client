@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
           {/* menus */}
           <ul className="hidden navMenu items-center text-[#54626A] text-base list-none">
-            {menusData?.main_menus.map((route) => (
+            {menusData?.main_menus?.map((route) => (
               <>
                 {route.status === "active" && (
                   <NavLink
