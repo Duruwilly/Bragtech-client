@@ -69,11 +69,21 @@ function Footer() {
         <div>
           <p className="text-white text-xl font-medium">Follow Us</p>
           <div className="flex items-center gap-10 mt-2">
-            <FaFacebookSquare color="white" size={30} />
-            <BsTwitter color="white" size={30} />
-            <BsInstagram color="white" size={30} />
-            <BsLinkedin color="white" size={30} />
-            <IoLogoWhatsapp color="white" size={30} />
+            <a href={companySettings?.facebook_link} target="_blank">
+              <FaFacebookSquare color="white" size={30} />
+            </a>
+            <a href={companySettings?.twitter_link} target="_blank">
+              <BsTwitter color="white" size={30} />
+            </a>
+            <a href={companySettings?.instagram_link} target="_blank">
+              <BsInstagram color="white" size={30} />
+            </a>
+            <a href={companySettings?.linkedin_link} target="_blank">
+              <BsLinkedin color="white" size={30} />
+            </a>
+            <a href={companySettings?.whatspp_chat_number} target="_blank">
+              <IoLogoWhatsapp color="white" size={30} />
+            </a>
           </div>
         </div>
       </div>
@@ -81,7 +91,7 @@ function Footer() {
         <div>
           <p className="text-white text-xs font-bold">&copy; 2023 Bragtech</p>
           <div className="flex flex-wrap items-center">
-            {menusData?.footer_menus.map((item) => (
+            {menusData?.footer_menus?.map((item) => (
               <>
                 {item.status === "active" && (
                   <Link key={item.id} to={item.url}>
