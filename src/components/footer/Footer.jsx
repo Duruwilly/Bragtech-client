@@ -14,7 +14,7 @@ function Footer() {
   };
 
   return (
-    <footer className="bg-[#222222] w-full px-10 pt-20 pb-9 relative">
+    <footer className="bg-[#222222] w-full px-10 pt-6 pb-9 relative">
       <div
         className="max-w-[80px] max-h-[90px] absolute right-9 top-12 cursor-pointer"
         onClick={scrollTop}
@@ -25,7 +25,7 @@ function Footer() {
           className=" w-full p-0 m-0"
         />
       </div>
-      <div className="container mx-auto flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between">
+      {/* <div className="container mx-auto flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between">
         <div className="lg:w-[292px]">
           <div className="max-w-[80px] max-h-[90px]">
             <Link to="/">
@@ -43,12 +43,9 @@ function Footer() {
         </div>
         <ul className="list-none text-[#D7D7D7] space-y-6 mr-8 w-[152px]">
           <li className="text-2xl lg:text-xl font-semibold mb-4">About</li>
-          {/* <li className="text-base font-medium">How it works</li> */}
-          {/* <li className="text-base font-medium">Featured</li> */}
           <Link to="/partners">
             <li className="text-base font-medium">Partnership</li>
           </Link>
-          {/* <li className="text-base font-medium">Business Relation</li> */}
         </ul>
         <ul className="list-none text-[#D7D7D7] space-y-6 mr-8 w-[152px]">
           <li className="text-2xl lg:text-xl  font-semibold mb-4">Community</li>
@@ -64,8 +61,8 @@ function Footer() {
           <li className="text-base font-medium">Twitter</li>
           <li className="text-base font-medium">Facebook</li>
         </ul>
-      </div>
-      <div className="container mx-auto flex flex-col lg:flex-row justify-between gap-9 mt-12">
+      </div> */}
+      <div className="container mx-auto flex flex-col lg:flex-row justify-center gap-9 mt-12">
         <div>
           <p className="text-white text-xl font-medium">Follow Us</p>
           <div className="flex items-center gap-10 mt-2">

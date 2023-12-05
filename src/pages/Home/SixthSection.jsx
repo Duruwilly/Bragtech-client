@@ -43,9 +43,9 @@ const SixthSection = () => {
                 <h4 className="text-white text-2xl font-bold mb-5">
                   Supporting Your Security Goals
                 </h4>
-                <div className="flex items-cente gap-4 mt-3">
-                  <FaCheckCircle color="#B50A0C" size={40} />
-                  {data?.section_3?.bullet_1_status === "active" && (
+                {data?.section_3?.bullet_1_status === "active" && (
+                  <div className="flex items-cente gap-4 mt-3">
+                    <FaCheckCircle color="#B50A0C" size={40} />
                     <p>
                       <span className="text-white text-lg font-bold">
                         {data?.section_3?.bullet_1_title}
@@ -55,12 +55,12 @@ const SixthSection = () => {
                         {data?.section_3?.bullet_1_description}
                       </span>
                     </p>
-                  )}
-                </div>
+                  </div>
+                )}
                 {/*  */}
-                <div className="flex items-cente gap-4 mt-3">
-                  <FaCheckCircle color="#B50A0C" size={40} />
-                  {data?.section_3?.bullet_2_status === "active" && (
+                {data?.section_3?.bullet_2_status === "active" && (
+                  <div className="flex items-cente gap-4 mt-3">
+                    <FaCheckCircle color="#B50A0C" size={40} />
                     <p>
                       <span className="text-white text-lg font-bold">
                         {data?.section_3?.bullet_2_title}
@@ -70,12 +70,12 @@ const SixthSection = () => {
                         {data?.section_3?.bullet_2_description}
                       </span>
                     </p>
-                  )}
-                </div>
+                  </div>
+                )}
                 {/*  */}
-                <div className="flex items-cente gap-4 mt-3">
-                  <FaCheckCircle color="#B50A0C" size={35} />
-                  {data?.section_3?.bullet_3_status === "active" && (
+                {data?.section_3?.bullet_3_status === "active" && (
+                  <div className="flex items-cente gap-4 mt-3">
+                    <FaCheckCircle color="#B50A0C" size={35} />
                     <p>
                       <span className="text-white text-lg font-bold">
                         {data?.section_3?.bullet_3_title}
@@ -85,8 +85,8 @@ const SixthSection = () => {
                         {data?.section_3?.bullet_3_description}
                       </span>
                     </p>
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
             </div>
           </Section>
