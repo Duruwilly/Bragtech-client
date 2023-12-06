@@ -4,7 +4,7 @@ const LastSection = () => {
   const { data } = useHomeContext();
 
   return (
-    <>
+    <div className="flex-1">
       {data?.section_5?.status === "active" && (
         <div className="flex flex-col items-center pt-[50px] bg-[#F5F6F8]">
           <div className="mt-8 w-full">
@@ -16,7 +16,7 @@ const LastSection = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

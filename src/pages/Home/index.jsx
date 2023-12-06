@@ -9,7 +9,7 @@ import HomeContextProvider from "./context/HomeContext";
 const Home = () => {
   return (
     <HomeContextProvider>
-      <Fragment style={{ flex: 1 }}>
+      <Fragment>
         <Heroe />
         <FourthSection />
         <SixthSection />

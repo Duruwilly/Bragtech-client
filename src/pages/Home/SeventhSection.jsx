@@ -6,7 +6,7 @@ const SeventhSection = () => {
   const { data } = useHomeContext();
 
   return (
-    <>
+    <div className="flex-1">
       {data?.section_4?.read_more_status === "active" && (
         <div className="flex flex-col items-center py-[60px] bg-[#F7F7F7]">
           <Section>
@@ -47,7 +47,7 @@ const SeventhSection = () => {
           </Section>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

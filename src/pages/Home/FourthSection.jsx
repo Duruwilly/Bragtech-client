@@ -6,7 +6,7 @@ import { useHomeContext } from "./context/HomeContext";
 const FourthSection = () => {
   const { data } = useHomeContext();
   return (
-    <>
+    <div className="flex-1">
       {data?.section_2?.status === "active" && (
         <div className="flex flex-col items-center h-[68p] pb-[32px] pt-[70px]">
           <Section>
@@ -60,7 +60,7 @@ const FourthSection = () => {
           </Section>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
